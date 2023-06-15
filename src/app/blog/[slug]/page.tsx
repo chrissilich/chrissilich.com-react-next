@@ -4,24 +4,24 @@ import { getPostSingle } from '@/services/blog'
 // import styles from '@/app/page.module.css'
 
 export default async function BlogSingle({ params }: { params: { slug: string } }) {
-	console.log('slug', params.slug)
 	const post = await getPostSingle(params.slug)
 
 	return (
-		<>
+		<main className="container">
 			{post && (
-				<main>
-					<h1>Blog Single</h1>
-					<p>{post.title.rendered}</p>
-					<p>{post.content.rendered}</p>
-				</main>
+				<>
+					<h1>{post.title.rendered}</h1>
+					<h2>Posted on {new Date(post.date).toLocaleDateString()}</h2>
+					<div dangerouslySetInnerHTML={{ __html: post.content.rendered }}></div>
+				</>
 			)}
 			{!post && (
-				<main>
-					<h1>Blog Single</h1>
+				<>
+					<h1>404</h1>
 					<p>Post not found.</p>
-				</main>
+				</>
 			)}
-		</>
+			<a href="/blog">Back to Archive</a>
+		</main>
 	)
 }

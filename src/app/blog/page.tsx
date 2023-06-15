@@ -7,13 +7,13 @@ export default async function BlogArchive() {
 	const posts = await getPostArchive()
 
 	return (
-		<main>
+		<main className="container">
 			<h1>Blog Archive</h1>
 			<ul>
 				{posts.map((post) => (
 					<li>
 						{post.title.rendered}
-						<a href={'/blog/' + post.slug}>Read More</a>
+						<a href={'/blog/' + post.slug}>Read Post</a>
 					</li>
 				))}
 			</ul>

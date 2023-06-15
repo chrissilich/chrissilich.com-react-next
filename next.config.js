@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-	importAlias: {
-		'@': 'sssrc',
-	},
-}
+const nextConfig = {}
 
 module.exports = nextConfig

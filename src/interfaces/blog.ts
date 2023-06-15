@@ -9,7 +9,7 @@ export interface BlogPost {
 	status: string
 	type: string
 	link: string
-	title: GUID
+	title: Title
 	content: Content
 	excerpt: Content
 	author: number
@@ -76,5 +76,9 @@ export interface Content {
 }
 
 export interface GUID {
+	rendered: string
+}
+
+export interface Title {
 	rendered: string
 }
