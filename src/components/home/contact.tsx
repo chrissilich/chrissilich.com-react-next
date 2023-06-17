@@ -1,6 +1,7 @@
 export default function HomeContact() {
 	return (
 		<section id="home-contact" className="text-block container-fluid">
+			<a id="contact"></a>
 			<div className="offset-1 col-10 offset-lg-2 col-lg-8 row">
 				<h2 className="mb-5">Contact</h2>
 				<div className="col col-md-6 col-xl-4">

@@ -1,3 +1,6 @@
+import Header from '@/components/header'
+import Footer from '@/components/footer'
+
 import { getPostArchive } from '@/services/blog'
 
 // import Image from 'next/image'
@@ -7,16 +10,20 @@ export default async function BlogArchive() {
 	const posts = await getPostArchive()
 
 	return (
-		<main className="container">
-			<h1>Blog Archive</h1>
-			<ul>
-				{posts.map((post) => (
-					<li>
-						{post.title.rendered}
-						<a href={'/blog/' + post.slug}>Read Post</a>
-					</li>
-				))}
-			</ul>
-		</main>
+		<>
+			<Header />
+			<main className="container">
+				<h1>Blog Archive</h1>
+				<ul>
+					{posts.map((post) => (
+						<li>
+							{post.title.rendered}
+							<a href={'/blog/' + post.slug}>Read Post</a>
+						</li>
+					))}
+				</ul>
+			</main>
+			<Footer />
+		</>
 	)
 }

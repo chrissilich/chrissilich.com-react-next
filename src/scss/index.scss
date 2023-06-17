@@ -4,9 +4,10 @@
 
 // Major components
 @import './components/layout';
-// @import './components/header';
+@import './components/header';
 @import './components/footer';
 @import './components/background';
 
 // Pages
 @import './components/home';
+@import './components/project';

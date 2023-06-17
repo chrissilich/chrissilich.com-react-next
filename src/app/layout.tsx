@@ -17,8 +17,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body>
 				{children}
 
-				<Footer />
-
 				{/* Todo: add Google Analytics */}
 			</body>
 		</html>
