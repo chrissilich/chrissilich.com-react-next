@@ -1,5 +1,12 @@
+// Core
 @import './setup/font-faces';
 @import './setup/bootstrap-custom';
 
+// Major components
 @import './components/layout';
+// @import './components/header';
+@import './components/footer';
+@import './components/background';
+
+// Pages
 @import './components/home';

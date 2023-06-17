@@ -1,181 +1,181 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap");
 @font-face {
   font-family: "Tusker Grotesk 1";
-  src: url("@/fonts/tusker/TuskerGrotesk-1500Medium.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-1500Medium.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-1500Medium.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-1500Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 1";
-  src: url("@/fonts/tusker/TuskerGrotesk-1700Bold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-1700Bold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-1700Bold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-1700Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 1";
-  src: url("@/fonts/tusker/TuskerGrotesk-1600Semibold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-1600Semibold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-1600Semibold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-1600Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 6";
-  src: url("@/fonts/tusker/TuskerGrotesk-6600Semibold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-6600Semibold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-6600Semibold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-6600Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 2";
-  src: url("@/fonts/tusker/TuskerGrotesk-2800Super.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-2800Super.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-2800Super.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-2800Super.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 4";
-  src: url("@/fonts/tusker/TuskerGrotesk-4700Bold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-4700Bold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-4700Bold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-4700Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 6";
-  src: url("@/fonts/tusker/TuskerGrotesk-6500Medium.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-6500Medium.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-6500Medium.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-6500Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 3";
-  src: url("@/fonts/tusker/TuskerGrotesk-3700Bold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-3700Bold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-3700Bold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-3700Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 5";
-  src: url("@/fonts/tusker/TuskerGrotesk-5800Super.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-5800Super.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-5800Super.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-5800Super.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 2";
-  src: url("@/fonts/tusker/TuskerGrotesk-2600Semibold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-2600Semibold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-2600Semibold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-2600Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 4";
-  src: url("@/fonts/tusker/TuskerGrotesk-4500Medium.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-4500Medium.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-4500Medium.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-4500Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 3";
-  src: url("@/fonts/tusker/TuskerGrotesk-3800Super.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-3800Super.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-3800Super.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-3800Super.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 4";
-  src: url("@/fonts/tusker/TuskerGrotesk-4800Super.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-4800Super.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-4800Super.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-4800Super.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 3";
-  src: url("@/fonts/tusker/TuskerGrotesk-3500Medium.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-3500Medium.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-3500Medium.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-3500Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 2";
-  src: url("@/fonts/tusker/TuskerGrotesk-2500Medium.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-2500Medium.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-2500Medium.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-2500Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 5";
-  src: url("@/fonts/tusker/TuskerGrotesk-5700Bold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-5700Bold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-5700Bold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-5700Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 4";
-  src: url("@/fonts/tusker/TuskerGrotesk-4600Semibold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-4600Semibold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-4600Semibold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-4600Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 6";
-  src: url("@/fonts/tusker/TuskerGrotesk-6700Bold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-6700Bold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-6700Bold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-6700Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 5";
-  src: url("@/fonts/tusker/TuskerGrotesk-5600Semibold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-5600Semibold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-5600Semibold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-5600Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 6";
-  src: url("@/fonts/tusker/TuskerGrotesk-6800Super.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-6800Super.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-6800Super.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-6800Super.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 3";
-  src: url("@/fonts/tusker/TuskerGrotesk-3600Semibold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-3600Semibold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-3600Semibold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-3600Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 5";
-  src: url("@/fonts/tusker/TuskerGrotesk-5500Medium.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-5500Medium.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-5500Medium.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-5500Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 1";
-  src: url("@/fonts/tusker/TuskerGrotesk-1800Super.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-1800Super.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-1800Super.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-1800Super.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 2";
-  src: url("@/fonts/tusker/TuskerGrotesk-2700Bold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-2700Bold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-2700Bold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-2700Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 7";
-  src: url("@/fonts/tusker/TuskerGrotesk-7700Bold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-7700Bold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-7700Bold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-7700Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 9";
-  src: url("@/fonts/tusker/TuskerGrotesk-9800Super.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-9800Super.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-9800Super.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-9800Super.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 8";
-  src: url("@/fonts/tusker/TuskerGrotesk-8800Super.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-8800Super.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-8800Super.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-8800Super.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 8";
-  src: url("@/fonts/tusker/TuskerGrotesk-8700Bold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-8700Bold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-8700Bold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-8700Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 7";
-  src: url("@/fonts/tusker/TuskerGrotesk-7800Super.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-7800Super.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-7800Super.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-7800Super.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Tusker Grotesk 7";
-  src: url("@/fonts/tusker/TuskerGrotesk-7600Semibold.woff2") format("woff2"), url("@/fonts/tusker/TuskerGrotesk-7600Semibold.woff") format("woff");
+  src: url("/fonts/tusker/TuskerGrotesk-7600Semibold.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-7600Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
@@ -7406,4 +7406,227 @@ body {
   opacity: 0.8;
   pointer-events: none;
   filter: saturate(0);
+}
+
+footer {
+  z-index: 10000;
+  border-top: 2px dashed #444;
+  margin-top: 100px;
+  padding: 15px 0 25px;
+  color: #666;
+  text-align: right;
+  font-size: 0.8em;
+}
+
+section#home-intro {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+@media (min-width: 768px) {
+  section#home-intro {
+    height: 75vh;
+    min-height: 550px;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+  }
+}
+section#home-intro .hero-text {
+  position: relative;
+  z-index: 100;
+  padding-top: 0vw;
+}
+@media (min-width: 768px) {
+  section#home-intro .hero-text {
+    padding-top: 23vw;
+    left: 8vw;
+  }
+}
+section#home-intro .hero-text h1 {
+  overflow: hidden;
+  font-family: "Tusker Grotesk 8";
+  font-weight: 800;
+  color: #00ffce;
+  transition: letter-spacing 0.2s;
+  margin-right: -5vw;
+  font-size: 12.5vw;
+  margin-top: -10vw;
+}
+@media (min-width: 768px) {
+  section#home-intro .hero-text h1 {
+    margin-top: 0;
+    font-size: 11vw;
+  }
+}
+section#home-intro .hero-text h1 em {
+  font-family: "Tusker Grotesk 4";
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: #ff0080;
+  transition: letter-spacing 0.2s;
+}
+section#home-intro .hero-text h1:hover {
+  letter-spacing: 0.02em;
+}
+section#home-intro .hero-text h1:hover em {
+  letter-spacing: -0.05em;
+}
+section#home-intro .hero-text h2 {
+  overflow: hidden;
+  margin-top: -2vw;
+  font-family: "Tusker Grotesk 2";
+  font-weight: 500;
+  margin-bottom: -0.17em;
+  font-size: 12.5vw;
+}
+@media (min-width: 768px) {
+  section#home-intro .hero-text h2 {
+    font-size: 8.5vw;
+  }
+}
+section#home-intro .hero-text h2 em {
+  font-style: normal;
+}
+@media (min-width: 768px) {
+  section#home-intro .hero-image {
+    position: relative;
+    overflow: hidden;
+    left: -8vw;
+    right: unset;
+  }
+}
+section#home-intro .hero-image img {
+  filter: grayscale(1);
+}
+
+section#home-portfolio-list h2 {
+  margin: 10vw auto 5vw;
+  text-align: center;
+  font-family: "Tusker Grotesk 9";
+  font-weight: 600;
+  color: #00ffce;
+  text-shadow: 8px 8px 0 #ff0080;
+  font-size: 4.5vw;
+  font-size: max(4.5vw, 30px);
+}
+section#home-portfolio-list .project-item {
+  position: relative;
+}
+@media (max-width: 767.98px) {
+  section#home-portfolio-list .project-item {
+    padding: 0 20px;
+  }
+  section#home-portfolio-list .project-item .details {
+    text-align: left;
+    order: 3;
+  }
+  section#home-portfolio-list .project-item .image-holder {
+    order: 2;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  section#home-portfolio-list .project-item.flipped .offsetter {
+    order: 1;
+  }
+  section#home-portfolio-list .project-item.flipped .details {
+    text-align: left;
+    order: 3;
+  }
+  section#home-portfolio-list .project-item.flipped .image-holder {
+    order: 2;
+  }
+}
+section#home-portfolio-list .project-item .project {
+  text-decoration: none;
+  text-align: right;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+section#home-portfolio-list .project-item .project:hover .image-holder .image {
+  top: -4px;
+  left: -4px;
+  box-shadow: 12px 12px 0px #ff0080;
+}
+section#home-portfolio-list .project-item .project:hover .image-holder .image img {
+  filter: grayscale(0);
+}
+section#home-portfolio-list .project-item .project:hover .details .see-project {
+  color: #00ffce;
+}
+section#home-portfolio-list .project-item .project:hover .details .see-project span {
+  left: 8px;
+}
+section#home-portfolio-list .project-item .project .image-holder {
+  padding-bottom: 10px;
+}
+@media (max-width: 767.98px) {
+  section#home-portfolio-list .project-item .project .image-holder .scroll-parallax-parent > div {
+    transform: none !important;
+  }
+}
+section#home-portfolio-list .project-item .project .image-holder .image {
+  box-shadow: 8px 8px 0px #ff0080;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.2s;
+}
+section#home-portfolio-list .project-item .project .image-holder .image img {
+  width: 100%;
+  height: auto;
+  transition: 0.2s;
+  filter: grayscale(1);
+}
+section#home-portfolio-list .project-item .project .details {
+  z-index: 100;
+}
+section#home-portfolio-list .project-item .project .details h3 {
+  font-family: "Tusker Grotesk 4";
+  font-weight: 500;
+  color: #00ffce;
+  font-size: 4.5vw;
+  font-size: max(4.5vw, 30px);
+}
+section#home-portfolio-list .project-item .project .details h4 {
+  font-size: 1.5vw;
+  font-size: max(1.5vw, 22px);
+  font-style: italic;
+}
+section#home-portfolio-list .project-item .project .details p {
+  font-size: 1.25vw;
+  font-size: max(1.25vw, 18px);
+  color: white;
+}
+section#home-portfolio-list .project-item .project .details .see-project {
+  cursor: pointer;
+  color: #ff0080;
+  transition: color 0.3s;
+}
+section#home-portfolio-list .project-item .project .details .see-project span {
+  position: relative;
+  left: 0px;
+  transition: left 0.3s;
+}
+
+.text-block {
+  background: rgba(0, 0, 0, 0.2);
+  padding-top: 6vw;
+  padding-bottom: 6vw;
+  font-size: 1.1em;
+  line-height: 150%;
+}
+@media (min-width: 768px) {
+  .text-block {
+    font-size: 1.3em;
+  }
+}
+.text-block h2 {
+  margin-bottom: 0.3em;
+  font-size: 2.5em;
+  font-family: "Tusker Grotesk 6";
+  font-weight: 600;
+  color: #00ffce;
+  text-shadow: 8px 8px 0 #ff0080;
 }
