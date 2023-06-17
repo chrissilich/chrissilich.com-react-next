@@ -7,13 +7,32 @@ export default async function ProjectSingle({ params }: { params: { slug: string
 		<main className="container">
 			{project && (
 				<>
-					<h1>{project.title.rendered}</h1>
-					<h2>
-						{project.acf.client} | {project.acf.medium}
-					</h2>
-					<div dangerouslySetInnerHTML={{ __html: project.content.rendered }}></div>
+					<nav className="container">
+						<a href={'/#' + project.slug}>
+							<span>←</span> Projects{' '}
+						</a>
+					</nav>
+
+					<section className="container">
+						<div>
+							<h1>
+								{project.acf.alternate_title_an_page
+									? project.acf.alternate_title_an_page
+									: project.title.rendered}
+							</h1>
+							<h2>
+								<em>Client:</em> {project.acf.client}
+							</h2>
+							<h3>{project.acf.medium}</h3>
+							<div
+								className="content row"
+								dangerouslySetInnerHTML={{ __html: project.content.rendered }}
+							></div>
+						</div>
+					</section>
 				</>
 			)}
+
 			{!project && (
 				<>
 					<h1>404</h1>
