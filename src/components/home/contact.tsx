@@ -1,6 +1,6 @@
 export default function HomeContact() {
 	return (
-		<div className="note container-fluid">
+		<section id="home-contact" className="text-block container-fluid">
 			<div className="offset-1 col-10 offset-lg-2 col-lg-8 row">
 				<h2>Contact</h2>
 				<div className="col col-md-4">
@@ -24,6 +24,6 @@ export default function HomeContact() {
 					<p>@chrissilich#2478</p>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }

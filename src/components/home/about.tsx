@@ -1,6 +1,6 @@
 export default function HomeAbout() {
 	return (
-		<div className="note container-fluid">
+		<section id="home-about" className="text-block container-fluid">
 			<div className="offset-1 col-10 offset-lg-2 col-lg-8">
 				<h2>Who?</h2>
 				<p>
@@ -12,11 +12,11 @@ export default function HomeAbout() {
 					<a href="https://vuejs.org/" target="_blank">
 						Vue
 					</a>
-					,
+					,{' '}
 					<a href="https://sass-lang.com/" target="_blank">
 						SCSS
 					</a>
-					, and
+					, and{' '}
 					<a href="https://wordpress.org/" target="_blank">
 						Wordpress
 					</a>
@@ -24,19 +24,19 @@ export default function HomeAbout() {
 					<a href="https://reactjs.org/" target="_blank">
 						React
 					</a>
-					,
+					,{' '}
 					<a href="https://greensock.com/gsap/" target="_blank">
 						GSAP
 					</a>
-					,
+					,{' '}
 					<a href="https://laravel.com/" target="_blank">
 						Laravel
 					</a>
-					,
+					,{' '}
 					<a href="https://unity.com/" target="_blank">
 						Unity
 					</a>
-					,
+					,{' '}
 					<a href="https://nodejs.org/en/" target="_blank">
 						Node
 					</a>
@@ -47,7 +47,7 @@ export default function HomeAbout() {
 					extremely detail-oriented, a bit of a perfectionist.
 				</p>
 				<p>
-					He spent the last nine years in higher education at the
+					He spent the last nine years in higher education at the{' '}
 					<a href="https://creativecircus.edu/" target="_blank">
 						Creative Circus
 					</a>
@@ -60,6 +60,6 @@ export default function HomeAbout() {
 					things.
 				</p>
 			</div>
-		</div>
+		</section>
 	)
 }

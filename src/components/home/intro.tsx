@@ -1,6 +1,6 @@
 export default function HomeIntro() {
 	return (
-		<section id="hero" className="container-fluid row align-items-center">
+		<section id="home-intro" className="container-fluid row align-items-center">
 			<div className="order-2 order-md-1 col-10 offset-1 offset-md-0 col-md-8 hero-text d-flex flex-column justify-content-end">
 				<h1>
 					Chris<em>Silich</em>
