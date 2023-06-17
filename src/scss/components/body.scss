@@ -1,0 +1,11 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	overflow-x: hidden;
+}
+
+.btn[disabled] {
+	opacity: 0.8;
+	pointer-events: none;
+	filter: saturate(0);
+}

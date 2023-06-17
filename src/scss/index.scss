@@ -1,5 +1,4 @@
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './setup/font-faces';
+@import './setup/bootstrap-custom';
 
-body {
-	padding: 20px;
-}
+@import './components/body';
