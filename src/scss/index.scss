@@ -1,6 +1,7 @@
 // Core
-@import './setup/font-faces';
-@import './setup/bootstrap-custom';
+@import './core/font-faces';
+@import './core/bootstrap-custom';
+@import './core/typography';
 
 // Major components
 @import './components/layout';

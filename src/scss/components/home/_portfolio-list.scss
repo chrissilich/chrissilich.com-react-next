@@ -11,10 +11,6 @@ section#home-portfolio-list {
 		font-size: 4.5vw;
 		font-size: max(4.5vw, 30px);
 	}
-	// p {
-	// 	margin: 0 auto;
-	// 	font-size: 1.5em;
-	// }
 
 	.project-item {
 		position: relative;
@@ -51,7 +47,6 @@ section#home-portfolio-list {
 		.project {
 			text-decoration: none;
 			text-align: right;
-			// padding: 2.5rem 0;
 			margin-top: 2.5rem;
 			margin-bottom: 2.5rem;
 			&:hover {
@@ -100,8 +95,6 @@ section#home-portfolio-list {
 			.details {
 				z-index: 100;
 				h3 {
-					font-family: 'Tusker Grotesk 4';
-					font-weight: 500;
 					color: colors.$color-hero;
 					font-size: 4.5vw;
 					font-size: max(4.5vw, 30px);

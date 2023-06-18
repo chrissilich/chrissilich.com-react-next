@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 
 export default function Header({ mode = 'default' }: { mode: string }) {
 	const [scrollY, setScrollY] = useState(0)
+	const [windowHeight, setWindowHeight] = useState(0)
 
 	useEffect(() => {
 		const handleScroll = () => setScrollY(window.scrollY)
@@ -10,8 +11,14 @@ export default function Header({ mode = 'default' }: { mode: string }) {
 		return () => window.removeEventListener('scroll', handleScroll)
 	}, [])
 
+	useEffect(() => {
+		const handleResize = () => setWindowHeight(window.innerHeight)
+		window.addEventListener('resize', handleResize)
+		return () => window.removeEventListener('resize', handleResize)
+	}, [])
+
 	return (
-		<header className={`container-fluid mode-${mode} ` + (scrollY > window.innerHeight ? 'show' : '')}>
+		<header className={`container-fluid mode-${mode} ` + (scrollY > windowHeight ? 'show' : '')}>
 			<div className="container">
 				<div className="row ">
 					<div className="col">

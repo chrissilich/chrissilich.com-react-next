@@ -1,6 +1,7 @@
 import { getProjectSingle } from '@/services/project'
 
 import Header from '@/components/header'
+import Background from '@/components/background'
 import Footer from '@/components/footer'
 
 export default async function ProjectSingle({ params }: { params: { slug: string } }) {
@@ -22,6 +23,9 @@ export default async function ProjectSingle({ params }: { params: { slug: string
 							<em>Client:</em> {project.acf.client}
 						</h2>
 						<h3>{project.acf.medium}</h3>
+
+						<hr />
+
 						<div
 							className="content row"
 							dangerouslySetInnerHTML={{ __html: project.content.rendered }}
@@ -37,6 +41,7 @@ export default async function ProjectSingle({ params }: { params: { slug: string
 				</>
 			)}
 
+			<Background />
 			<Footer />
 		</>
 	)
