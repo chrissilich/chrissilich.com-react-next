@@ -4,7 +4,7 @@ export default function HomeContact() {
 			<a id="contact"></a>
 			<div className="offset-1 col-10 offset-lg-2 col-lg-8 row">
 				<h2 className="mb-5">Contact</h2>
-				<div className="col col-md-6 col-xl-4">
+				<div className="col col-md-6">
 					<h3>Résumé</h3>
 					<p>
 						<a target="_blank" href="./pdf/resume-chris-silich-front-end-dev.pdf">
@@ -12,17 +12,13 @@ export default function HomeContact() {
 						</a>
 					</p>
 				</div>
-				<div className="col col-md-6 col-xl-4">
+				<div className="col col-md-6">
 					<h3>Email</h3>
 					<p>
 						<a target="_blank" href="mailto:chris.silich@gmail.com">
 							chris.silich@gmail.com
 						</a>
 					</p>
-				</div>
-				<div className="col col-md-6 col-xl-4">
-					<h3>Discord</h3>
-					<p>@chrissilich</p>
 				</div>
 			</div>
 		</section>

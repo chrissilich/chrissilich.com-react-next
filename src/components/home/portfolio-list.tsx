@@ -5,13 +5,15 @@ export default async function HomePortfolioList() {
 	const projects = await getProjectArchive()
 
 	return (
-		<section id="home-portfolio-list" className="container">
+		<>
 			<a id="projects"></a>
+			<section id="home-portfolio-list" className="container">
+				<h2 className="fat">Selected Projects</h2>
 
-			<h2>Selected Works</h2>
-			{projects.map((project, index) => (
-				<PortfolioListItem key={index} project={project} />
-			))}
-		</section>
+				{projects.map((project, index) => (
+					<PortfolioListItem key={index} project={project} />
+				))}
+			</section>
+		</>
 	)
 }
