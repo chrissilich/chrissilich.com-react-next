@@ -38,6 +38,7 @@ section#home-portfolio-list {
 				}
 				.image-holder {
 					order: 2;
+					left: -30px !important;
 
 					.image {
 					}
@@ -71,6 +72,8 @@ section#home-portfolio-list {
 			.image-holder {
 				// overflow: hidden;
 				padding-bottom: 10px;
+				position: relative;
+				left: 30px;
 
 				@include media-breakpoint-down(md) {
 					.scroll-parallax-parent > div {

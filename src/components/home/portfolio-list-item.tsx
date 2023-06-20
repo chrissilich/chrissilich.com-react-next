@@ -5,7 +5,7 @@ export default async function HomePortfolioListItem({ project }: { project: Proj
 	return (
 		<section id={project.slug} className={'project-item row ' + (project.acf.flipped ? 'flipped' : '')}>
 			<a id={project.slug}></a>
-			<a href={'projects/' + project.slug} className={'project row '}>
+			<a href={'projects/' + project.slug} className="project d-flex flex-wrap">
 				<div
 					className={
 						'offsetter col d-none d-lg-block ' +
@@ -14,7 +14,7 @@ export default async function HomePortfolioListItem({ project }: { project: Proj
 				></div>
 				<div
 					className={
-						'details col d-flex flex-column justify-content-center col-10 col-md-6 offset-1 offset-md-0 ' +
+						'details col d-flex flex-column justify-content-center col-12 col-md-6 offset-0 offset-md-0 ' +
 						(project.acf.description_columns ? 'col-lg-' + project.acf.description_columns : 'col-lg-5')
 					}
 				>
@@ -27,7 +27,7 @@ export default async function HomePortfolioListItem({ project }: { project: Proj
 				</div>
 				<div
 					className={
-						'image-holder col col-10 col-md-6 offset-1 offset-md-0 ' +
+						'image-holder col col-12 col-md-6 offset-0 offset-md-0 ' +
 						(project.acf.image_columns ? 'col-lg-' + project.acf.image_columns : 'col-lg-5')
 					}
 				>

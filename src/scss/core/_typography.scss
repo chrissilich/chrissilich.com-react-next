@@ -1,29 +1,73 @@
+@use '../variables/colors' as colors;
+
 body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
-	line-height: 140%;
+	line-height: 150%;
 }
-h1 {
+h1,
+.h1 {
 	font-family: 'Tusker Grotesk 7', sans-serif;
 	font-weight: 600;
 	font-size: 3em;
-	margin-bottom: 0.3em;
 }
-h2 {
+h2,
+.h2 {
 	font-family: 'Tusker Grotesk 6', sans-serif;
 	font-weight: 600;
 	font-size: 2.5em;
-	margin-bottom: 0.3em;
 }
-h3 {
+h3,
+.h3 {
 	font-family: 'Tusker Grotesk 4', sans-serif;
 	font-weight: 500;
 	font-size: 2em;
-	margin-bottom: 0.2em;
 }
-
-h4 {
+h4,
+.h4 {
 	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 	font-weight: 500;
+}
+
+p {
+	& + h1,
+	& + h2,
+	& + h3,
+	& + h4,
+	& + h5 {
+		margin-top: 1.5em;
+	}
+}
+
+aside {
+	color: colors.$color-hero-tint;
+	// color: white;
+	h1,
+	.h1 {
+		color: inherit;
+		font-size: 2em;
+	}
+	h2,
+	.h2 {
+		color: inherit;
+		font-size: 1.5em;
+	}
+	h3,
+	.h3 {
+		color: inherit;
+		font-size: 1.2em;
+	}
+	h4,
+	.h4 {
+		color: inherit;
+		font-size: 1em;
+	}
+	ul {
+		padding-left: 0;
+		li {
+			font-size: 0.85em;
+			margin: 0.75em 0;
+		}
+	}
 }

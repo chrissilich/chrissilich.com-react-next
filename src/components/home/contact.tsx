@@ -22,7 +22,7 @@ export default function HomeContact() {
 				</div>
 				<div className="col col-md-6 col-xl-4">
 					<h3>Discord</h3>
-					<p>@chrissilich#2478</p>
+					<p>@chrissilich</p>
 				</div>
 			</div>
 		</section>

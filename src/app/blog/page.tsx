@@ -1,4 +1,5 @@
 import Header from '@/components/header'
+import Background from '@/components/background'
 import Footer from '@/components/footer'
 
 import { getPostArchive } from '@/services/blog'
@@ -12,17 +13,22 @@ export default async function BlogArchive() {
 	return (
 		<>
 			<Header />
-			<main className="container">
-				<h1>Blog Archive</h1>
+
+			<section id="blog-archive" className="container">
+				<h1>Blog</h1>
 				<ul>
 					{posts.map((post) => (
 						<li>
-							{post.title.rendered}
+							<h4>{post.title.rendered}</h4>
+							<div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}></div>
 							<a href={'/blog/' + post.slug}>Read Post</a>
 						</li>
 					))}
 				</ul>
-			</main>
+			</section>
+
+			<Background />
+
 			<Footer />
 		</>
 	)
