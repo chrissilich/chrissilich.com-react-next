@@ -1,27 +1,33 @@
-import { getPostSingle } from '@/services/blog'
+import Header from '@/components/header'
+import BlogSingle from '@/components/blog/single'
+import Blog404 from '@/components/blog/404'
+import BlogSidebar from '@/components/blog/sidebar'
+import Background from '@/components/background'
+import Footer from '@/components/footer'
 
-// import Image from 'next/image'
-// import styles from '@/app/page.module.css'
+import { getPostSingle, getPostArchive } from '@/services/blog'
 
-export default async function BlogSingle({ params }: { params: { slug: string } }) {
+export default async function BlogSinglePage({ params }: { params: { slug: string } }) {
 	const post = await getPostSingle(params.slug)
+	const posts = await getPostArchive()
 
 	return (
-		<main className="container">
-			{post && (
-				<>
-					<h1>{post.title.rendered}</h1>
-					<h2>Posted on {new Date(post.date).toLocaleDateString()}</h2>
-					<div dangerouslySetInnerHTML={{ __html: post.content.rendered }}></div>
-				</>
-			)}
-			{!post && (
-				<>
-					<h1>404</h1>
-					<p>Post not found.</p>
-				</>
-			)}
-			<a href="/blog">Back to Archive</a>
-		</main>
+		<>
+			<Header />
+
+			<section id="blog-single" className="container">
+				<div className="row">
+					{post && <BlogSingle post={post} />}
+					{!post && <Blog404 />}
+					<BlogSidebar posts={posts} />
+				</div>
+
+				<a href="/blog">Back to Blog Archive</a>
+			</section>
+
+			<Background />
+
+			<Footer />
+		</>
 	)
 }

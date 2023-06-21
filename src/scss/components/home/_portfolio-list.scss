@@ -1,0 +1,98 @@
+@use '../../variables/colors';
+
+section#home-portfolio-list {
+	.project-item {
+		position: relative;
+
+		@include media-breakpoint-down(md) {
+			padding: 0 20px;
+			.details {
+				text-align: left;
+				order: 3;
+			}
+			.image-holder {
+				order: 2;
+				margin-bottom: 20px;
+			}
+		}
+
+		@include media-breakpoint-up(lg) {
+			&.flipped {
+				.project {
+					.offsetter {
+						order: 1;
+					}
+					.details {
+						text-align: left;
+						order: 3;
+					}
+					.image-holder {
+						order: 2;
+						left: -35px;
+
+						.image {
+						}
+					}
+				}
+			}
+		}
+		.project {
+			text-decoration: none;
+			text-align: right;
+			margin-top: 2.5rem;
+			margin-bottom: 2.5rem;
+
+			.image-holder {
+				// overflow: hidden;
+				padding-bottom: 10px;
+				left: 30px;
+
+				@include media-breakpoint-up(md) {
+					position: relative;
+				}
+				.image {
+					box-shadow: 8px 8px 0px colors.$color-hero-secondary;
+					position: relative;
+					top: 0;
+					left: 0;
+					width: 100%;
+					transition: 0.2s;
+					img {
+						width: 100%;
+						height: auto;
+						transition: 0.2s;
+						filter: grayscale(1);
+					}
+				}
+			}
+			.details {
+				z-index: 100;
+				h3 {
+					color: colors.$color-hero;
+					font-size: 4.5vw;
+					font-size: max(4.5vw, 30px);
+				}
+				h4 {
+					font-size: 1.5vw;
+					font-size: max(1.5vw, 22px);
+					font-style: italic;
+				}
+				p {
+					font-size: 1.25vw;
+					font-size: max(1.25vw, 18px);
+					color: white;
+				}
+				.see-project {
+					cursor: pointer;
+					color: colors.$color-hero-secondary;
+					transition: color 0.3s;
+					span {
+						position: relative;
+						left: 0px;
+						transition: left 0.3s;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,5 +1,16 @@
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+// Core
+@import './core/font-faces';
+@import './core/bootstrap-custom';
+@import './core/typography';
 
-body {
-	padding: 20px;
-}
+// Major components
+@import './components/layout';
+@import './components/header';
+@import './components/footer';
+@import './components/background';
+@import './components/gutenberg';
+
+// Pages
+@import './components/home';
+@import './components/project';
+@import './components/blog';

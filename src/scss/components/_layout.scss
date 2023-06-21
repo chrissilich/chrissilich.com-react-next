@@ -1,0 +1,9 @@
+body {
+	overflow-x: hidden;
+}
+
+.btn[disabled] {
+	opacity: 0.8;
+	pointer-events: none;
+	filter: saturate(0);
+}

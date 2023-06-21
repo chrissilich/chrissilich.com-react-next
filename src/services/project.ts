@@ -1,9 +1,9 @@
-import { PROJECT_ENDPOINT, PROJECT_ENDPOINT_SINGLE } from './endpoints'
+import { PROJECT_ENDPOINT_ARCHIVE, PROJECT_ENDPOINT_SINGLE } from './endpoints'
 import { Project } from '@/interfaces/project'
 import { getMedia } from '@/services/media'
 
 export const getProjectArchive = async () => {
-	const response = await fetch(PROJECT_ENDPOINT, {
+	const response = await fetch(PROJECT_ENDPOINT_ARCHIVE, {
 		next: { revalidate: 60 },
 	})
 	const projects: Project[] = await response.json()
@@ -12,11 +12,9 @@ export const getProjectArchive = async () => {
 		projects.map(async (project) => {
 			if (project.acf.main_image) {
 				project.main_image_media = await getMedia(project.acf.main_image)
-				console.log('got image')
 			}
 		})
 	)
-	console.log('done with images')
 	return projects
 }
 
