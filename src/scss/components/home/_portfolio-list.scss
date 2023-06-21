@@ -18,18 +18,20 @@ section#home-portfolio-list {
 
 		@include media-breakpoint-up(lg) {
 			&.flipped {
-				.offsetter {
-					order: 1;
-				}
-				.details {
-					text-align: left;
-					order: 3;
-				}
-				.image-holder {
-					order: 2;
-					left: -30px !important;
+				.project {
+					.offsetter {
+						order: 1;
+					}
+					.details {
+						text-align: left;
+						order: 3;
+					}
+					.image-holder {
+						order: 2;
+						left: -35px;
 
-					.image {
+						.image {
+						}
 					}
 				}
 			}
@@ -39,35 +41,14 @@ section#home-portfolio-list {
 			text-align: right;
 			margin-top: 2.5rem;
 			margin-bottom: 2.5rem;
-			&:hover {
-				.image-holder {
-					.image {
-						top: -4px;
-						left: -4px;
-						box-shadow: 12px 12px 0px colors.$color-hero-secondary;
-						img {
-							filter: grayscale(0);
-						}
-					}
-				}
-				.details .see-project {
-					color: colors.$color-hero;
-					span {
-						left: 8px;
-					}
-				}
-			}
 
 			.image-holder {
 				// overflow: hidden;
 				padding-bottom: 10px;
-				position: relative;
 				left: 30px;
 
-				@include media-breakpoint-down(md) {
-					.scroll-parallax-parent > div {
-						transform: none !important;
-					}
+				@include media-breakpoint-up(md) {
+					position: relative;
 				}
 				.image {
 					box-shadow: 8px 8px 0px colors.$color-hero-secondary;

@@ -1,0 +1,111 @@
+@use '../variables/colors' as colors;
+
+// In this site, we'll put content built in the gutenberg editor inside .gutenberg-content
+// In wordpress, it's inside .editor-styles-wrapper
+
+.gutenberg-content,
+.editor-styles-wrapper {
+	h2 {
+		color: white;
+	}
+	h3 {
+		margin-bottom: 0.5em;
+	}
+	ul {
+		strong {
+			font-family: 'Tusker Grotesk 4';
+			font-weight: 400;
+			font-size: 1.7em;
+		}
+	}
+	hr {
+		border-top: 2px dashed colors.$color-hero;
+	}
+	pre.wp-block-code {
+		background-color: black;
+		color: colors.$color-hero;
+		padding: 1em;
+		border-radius: 8px;
+		overflow-x: auto;
+		tab-size: 2em;
+	}
+
+	.wp-block-columns {
+		display: flex;
+		flex-direction: row;
+		margin: 1em 0;
+		@include media-breakpoint-down(md) {
+			flex-wrap: wrap;
+		}
+
+		.wp-block-column {
+			margin-right: 3%;
+			@include media-breakpoint-down(md) {
+				flex-basis: 100% !important;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.wp-block-buttons {
+		div {
+			display: inline-block;
+			margin-right: 10px;
+			a {
+				display: inline-block;
+				font-size: 1.2em;
+				padding: 0.5em 1em;
+				text-decoration: none;
+				border-radius: 8px;
+				border: 1px solid colors.$color-hero-secondary;
+				color: colors.$color-hero-secondary;
+				transition: 0.3s;
+				&:hover {
+					color: #111;
+					background-color: colors.$color-hero-secondary;
+				}
+			}
+
+			&.disabled {
+				a {
+					pointer-events: none;
+					filter: saturate(0) brightness(1.8);
+				}
+			}
+		}
+	}
+	.wp-block-embed.is-type-video {
+		.wp-block-embed__wrapper {
+			width: 100%;
+			aspect-ratio: 16/9;
+		}
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.wp-block-gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		figure {
+			width: 48%;
+			@include media-breakpoint-down(md) {
+				width: 100%;
+			}
+			img {
+				width: 100%;
+				height: auto;
+				border-bottom: 5px solid colors.$color-hero-secondary;
+				border-right: 5px solid colors.$color-hero-secondary;
+			}
+		}
+	}
+}

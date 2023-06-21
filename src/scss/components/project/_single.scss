@@ -1,0 +1,76 @@
+@use '../../variables/colors';
+
+.project-single {
+	nav {
+		z-index: 10000;
+		border-bottom: 2px dashed #444;
+
+		padding: 20px 0 15px;
+		a {
+			color: #888;
+			text-decoration: none;
+			transition: color 0.3s;
+			span {
+				position: relative;
+				left: 0;
+				transition: left 0.3s;
+			}
+			&:hover {
+				color: colors.$color-hero;
+				span {
+					left: -10px;
+				}
+			}
+		}
+	}
+
+	h1 {
+		font-family: 'Tusker Grotesk 8';
+		font-weight: 800;
+		color: colors.$color-hero;
+		padding-top: 8vw;
+		font-size: 3em;
+		hyphens: auto;
+		@media (min-width: 374px) {
+			font-size: 3.75em;
+		}
+		@include media-breakpoint-up(md) {
+			font-size: 8.1vw;
+		}
+	}
+	h2 {
+		font-family: 'Tusker Grotesk 7';
+		font-weight: 700;
+		color: colors.$color-hero-secondary;
+		margin-bottom: 2vw;
+		font-size: 3em;
+		@include media-breakpoint-up(md) {
+			font-size: 4vw;
+		}
+		em {
+			font-style: normal;
+			font-family: 'Tusker Grotesk 3';
+			font-weight: 200;
+		}
+	}
+	h3 {
+		color: white;
+		margin-bottom: 2em;
+		font-size: 2em;
+		font-weight: 300;
+		@include media-breakpoint-up(md) {
+			font-size: 4vw;
+		}
+	}
+
+	hr {
+		margin: 30px auto;
+		opacity: 1;
+		border: 0;
+		border-top: 2px dashed #666;
+	}
+
+	.overlapper {
+		margin-top: -100px;
+	}
+}

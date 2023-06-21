@@ -5,6 +5,10 @@ import { useState, useEffect } from 'react'
 export default function Background() {
 	const [scrollY, setScrollY] = useState(0)
 
+	// check for prefers reduced motion
+	const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+	const multiplier = prefersReducedMotion ? 0 : 0.1
+
 	useEffect(() => {
 		const handleScroll = () => setScrollY(window.scrollY)
 		window.addEventListener('scroll', handleScroll)
@@ -14,7 +18,7 @@ export default function Background() {
 	return (
 		<div
 			className="background-grid-effect"
-			style={{ backgroundPosition: scrollY * -0.1 + 'px ' + scrollY * 0.1 + 'px' }}
+			style={{ backgroundPosition: scrollY * -multiplier + 'px ' + scrollY * multiplier + 'px' }}
 		></div>
 	)
 }

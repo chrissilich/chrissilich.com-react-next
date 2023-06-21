@@ -14,7 +14,10 @@ export default function ProjectSingle({ project }: { project: Project }) {
 
 				<hr />
 
-				<div className="content row" dangerouslySetInnerHTML={{ __html: project.content.rendered }}></div>
+				<div
+					className="gutenberg-content row"
+					dangerouslySetInnerHTML={{ __html: project.content.rendered }}
+				></div>
 			</section>
 		</>
 	)

@@ -5,7 +5,7 @@ export default function BlogSingle({ post }: { post: BlogPost }) {
 		<>
 			<h1 className="pb-5">{post.title.rendered}</h1>
 			<hr />
-			<div className="col-12 col-md-8">
+			<div className="gutenberg-content col-12 col-md-8">
 				<p>
 					<em>Posted on {new Date(post.date).toLocaleDateString()}</em>
 				</p>

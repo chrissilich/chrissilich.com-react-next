@@ -8,16 +8,16 @@ export default async function BlogRecent() {
 	return (
 		<section id="home-blog-recent" className="container py-5">
 			<h2 className="fat">Recent Blog Posts</h2>
-			{recentPosts.map((post) => (
-				<div key={post.id} className="row py-3">
-					<div className="col-12 col-md-10 offset-md-1 ">
-						<p>
+			<div className="row py-3">
+				<div className="col-12 col-md-10 offset-md-1 ">
+					{recentPosts.map((post) => (
+						<p key={post.id}>
 							<a href={`/blog/${post.slug}`}>{post.title.rendered}</a> &mdash;{' '}
 							<em>Posted on {new Date(post.date).toLocaleDateString()}</em>
 						</p>
-					</div>
+					))}
 				</div>
-			))}
+			</div>
 		</section>
 	)
 }
