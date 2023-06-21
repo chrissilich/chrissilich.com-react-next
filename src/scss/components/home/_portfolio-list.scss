@@ -42,6 +42,25 @@ section#home-portfolio-list {
 			margin-top: 2.5rem;
 			margin-bottom: 2.5rem;
 
+			&:hover {
+				.image-holder {
+					.image {
+						top: -4px;
+						left: -4px;
+						box-shadow: 12px 12px 0px colors.$color-hero-secondary;
+						img {
+							filter: grayscale(0);
+						}
+					}
+				}
+				.details .see-project {
+					color: colors.$color-hero;
+					span {
+						left: 8px;
+					}
+				}
+			}
+
 			.image-holder {
 				// overflow: hidden;
 				padding-bottom: 10px;
