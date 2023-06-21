@@ -43,8 +43,8 @@ export default function HomeAbout() {
 					, and a lot of CSS and UI frameworks.
 				</p>
 				<p>
-					He's also got years of experience in graphic design, UX/UI, and motion graphics, which makes him
-					extremely detail-oriented, a bit of a perfectionist.
+					He&apos;s also got years of experience in graphic design, UX/UI, and motion graphics, which makes
+					him extremely detail-oriented, a bit of a perfectionist.
 				</p>
 				<p>
 					He spent the last nine years in higher education at the{' '}

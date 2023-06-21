@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function HomeIntro() {
 	return (
 		<section id="home-intro" className="container-fluid row align-items-center">
@@ -11,7 +13,13 @@ export default function HomeIntro() {
 			</div>
 			<div className="order-1 order-md-2 offset-1 offset-md-0 col-10 col-md-4 hero-image">
 				{/* <scroll-parallax direction="y" speed="-0.1"> */}
-				<img className="img-fluid" src="/images/Chris-11.jpg" />
+				<Image
+					alt="Chris looking exceptionally thoughtful"
+					src="/images/Chris-11.jpg"
+					width={667}
+					height={1000}
+					className="img-fluid"
+				/>
 				{/* </scroll-parallax> */}
 			</div>
 		</section>

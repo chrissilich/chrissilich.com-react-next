@@ -4,12 +4,14 @@ import { useState, useEffect } from 'react'
 
 export default function Background() {
 	const [scrollY, setScrollY] = useState(0)
-
-	// check for prefers reduced motion
-	const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-	const multiplier = prefersReducedMotion ? 0 : 0.1
+	const [multiplier, setMultiplier] = useState(0.1)
 
 	useEffect(() => {
+		if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+			setMultiplier(0)
+			return
+		}
+
 		const handleScroll = () => setScrollY(window.scrollY)
 		window.addEventListener('scroll', handleScroll)
 		return () => window.removeEventListener('scroll', handleScroll)
