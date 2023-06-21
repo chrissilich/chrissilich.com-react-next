@@ -42,7 +42,7 @@
 		font-family: 'Tusker Grotesk 7';
 		font-weight: 700;
 		color: colors.$color-hero-secondary;
-		margin-bottom: 2vw;
+		// margin-bottom: 2vw;
 		font-size: 3em;
 		@include media-breakpoint-up(md) {
 			font-size: 4vw;
@@ -55,7 +55,7 @@
 	}
 	h3 {
 		color: white;
-		margin-bottom: 2em;
+		// margin-bottom: 2em;
 		font-size: 2em;
 		font-weight: 300;
 		@include media-breakpoint-up(md) {

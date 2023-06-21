@@ -43,15 +43,12 @@ export default function HomeAbout() {
 					, and a lot of CSS and UI frameworks.
 				</p>
 				<p>
-					He&apos;s also got years of experience in graphic design, UX/UI, and motion graphics, which makes
-					him extremely detail-oriented, a bit of a perfectionist.
+					He started his career in graphic design, UX/UI, and motion graphics, which makes him extremely
+					detail-oriented, a bit of a perfectionist when it comes to executing a design and upholding a brand.
 				</p>
 				<p>
-					He spent the last nine years in higher education at the{' '}
-					<a href="https://creativecircus.edu/" target="_blank">
-						Creative Circus
-					</a>
-					, as the director of the design and creative technology programs. This wealth of teaching experience
+					He spent the last nine years in higher education at a portfolio school called the Creative Circus,
+					as the director of the design and creative technology programs. This wealth of teaching experience
 					makes him a very good communicator, team-member, and leader. At the same time, he freelanced in
 					order to stay up-to-date with the industry (and pay the bills!).
 				</p>
