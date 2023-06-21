@@ -1,6 +1,6 @@
 import { BlogPost } from '@/interfaces/blog'
 
-export default function BlogSingle({ post }: { post: BlogPost }) {
+export default function Blog404() {
 	return (
 		<>
 			<h1>404</h1>

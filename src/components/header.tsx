@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 
-export default function Header({ mode = 'default' }: { mode: string }) {
+export default function Header({ mode = 'default' }: { mode?: string }) {
 	const [scrollY, setScrollY] = useState(0)
 	const [windowHeight, setWindowHeight] = useState(0)
 
