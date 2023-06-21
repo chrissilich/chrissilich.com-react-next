@@ -1,3 +1,23 @@
+# ChrisSilich.com
+
+## React/NextJS with Headless Wordpress API
+
+This is the code for the front end of the website [chrissilich.com](https://chrissilich.com). I rebuilt it and wrote blog posts going through, step by step, how I did it. The blog posts can be found [here](https://chrissilich.com/blog/).
+
+The back end is WordPress as a Headless CMS using the built in REST/JSON API, and the front end is a React / NextJS app (using the new App Router). Also included: SCSS, Typescript, GSAP, Bootstrap.
+
+## Simplified Branch (that still matches the blog posts)
+
+The main branch has moved far beyond the blog posts in order to make the site exactly the way I want it. If you want to see the code that results from the instructions if you followed the blog posts, it's in this branch: [https://github.com/chrissilich/chrissilich.com-react-next/tree/simple-version-for-blog-posts](https://github.com/chrissilich/chrissilich.com-react-next/tree/simple-version-for-blog-posts).
+
+---
+
+## Note
+
+Everything beyond this point is the NextJS boilerplate Readme
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -22,8 +42,8 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+-   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
