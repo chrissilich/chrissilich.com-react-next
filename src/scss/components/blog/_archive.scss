@@ -1,0 +1,15 @@
+@use '../../variables/colors' as colors;
+
+section#blog-archive {
+	ul {
+		list-style: none;
+		padding-left: 0;
+		li {
+			padding: 1.5em 0;
+			border-bottom: 1px dashed colors.$color-hero-secondary;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+}

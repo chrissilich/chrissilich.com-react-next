@@ -1,8 +1,8 @@
-import { BLOG_ENDPOINT, BLOG_ENDPOINT_SINGLE } from './endpoints'
+import { BLOG_ENDPOINT_ARCHIVE, BLOG_ENDPOINT_SINGLE } from './endpoints'
 import { BlogPost } from '@/interfaces/blog'
 
 export const getPostArchive = async () => {
-	const response = await fetch(BLOG_ENDPOINT, {
+	const response = await fetch(BLOG_ENDPOINT_ARCHIVE, {
 		next: { revalidate: 60 },
 	})
 	const data: BlogPost[] = await response.json()

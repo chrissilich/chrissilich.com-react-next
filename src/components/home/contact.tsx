@@ -1,0 +1,26 @@
+export default function HomeContact() {
+	return (
+		<section id="home-contact" className="text-block container-fluid">
+			<a id="contact"></a>
+			<div className="offset-1 col-10 offset-lg-2 col-lg-8 row">
+				<h2 className="mb-5">Contact</h2>
+				<div className="col col-md-6">
+					<h3>Résumé</h3>
+					<p>
+						<a target="_blank" href="./pdf/resume-chris-silich-front-end-dev.pdf">
+							Download/view PDF
+						</a>
+					</p>
+				</div>
+				<div className="col col-md-6">
+					<h3>Email</h3>
+					<p>
+						<a target="_blank" href="mailto:chris.silich@gmail.com">
+							chris.silich@gmail.com
+						</a>
+					</p>
+				</div>
+			</div>
+		</section>
+	)
+}
