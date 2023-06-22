@@ -20,7 +20,9 @@
 		"next": "13.4.5",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
+		"react-scroll-parallax": "^3.4.2",
 		"sass": "^1.63.4",
+		"sharp": "^0.32.1",
 		"typescript": "5.1.3"
 	}
 }
