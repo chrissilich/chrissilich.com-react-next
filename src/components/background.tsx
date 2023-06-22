@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react'
 
 export default function Background() {
+	// Note: I could have used a library like react-scroll-parallax, but I wanted to try to implement it myself.
+
 	const [scrollY, setScrollY] = useState(0)
 	const [multiplier, setMultiplier] = useState(0.1)
 
