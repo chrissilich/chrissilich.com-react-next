@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap");
 @font-face {
   font-family: "Tusker Grotesk 1";
   src: url("/fonts/tusker/TuskerGrotesk-1500Medium.woff2") format("woff2"), url("/fonts/tusker/TuskerGrotesk-1500Medium.woff") format("woff");
@@ -7399,13 +7398,171 @@ progress {
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
+  line-height: 150%;
+}
+
+h1,
+.h1 {
+  font-family: "Tusker Grotesk 7", sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+h2,
+.h2 {
+  font-family: "Tusker Grotesk 6", sans-serif;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+
+h3,
+.h3 {
+  font-family: "Tusker Grotesk 4", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+h4,
+.h4 {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+p + h1, p + h2, p + h3, p + h4, p + h5 {
+  margin-top: 1.5em;
+}
+
+aside {
+  color: #66ffe2;
+}
+aside h1,
+aside .h1 {
+  color: inherit;
+  font-size: 2em;
+}
+aside h2,
+aside .h2 {
+  color: inherit;
+  font-size: 1.5em;
+}
+aside h3,
+aside .h3 {
+  color: inherit;
+  font-size: 1.2em;
+}
+aside h4,
+aside .h4 {
+  color: inherit;
+  font-size: 1em;
+}
+aside ul {
+  padding-left: 0;
+}
+aside ul li {
+  font-size: 0.85em;
+  margin: 0.75em 0;
+}
+
+h2.fat {
+  margin: 10vw auto 5vw;
+  text-align: center;
+  font-family: "Tusker Grotesk 9";
+  font-weight: 600;
+  color: #00ffce;
+  text-shadow: 8px 8px 0 #ff0080;
+  font-size: 4.5vw;
+  font-size: max(4.5vw, 30px);
+}
+
+body {
   overflow-x: hidden;
+  width: 100vw;
 }
 
 .btn[disabled] {
   opacity: 0.8;
   pointer-events: none;
   filter: saturate(0);
+}
+
+body:has(header.mode-default) {
+  padding-top: 150px;
+}
+
+header {
+  position: fixed;
+  top: -100px;
+  background: rgba(25, 25, 25, 0.75);
+  z-index: 1030;
+  transition: 0.5s;
+  padding: 1em 0em;
+}
+@media (min-width: 768px) {
+  header {
+    padding: 1.5em 0.5em 1.4em;
+  }
+}
+header.show, header.mode-default {
+  top: 0px;
+}
+header a {
+  text-decoration: none;
+}
+header .branding,
+header nav {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  header .branding,
+  header nav {
+    width: auto;
+  }
+}
+header .branding h1 {
+  font-family: "Tusker Grotesk 7";
+  font-weight: 300;
+  color: #ff0080;
+  font-size: 5.3vw;
+  text-align: center;
+  margin: 0.5em;
+}
+@media (min-width: 576px) {
+  header .branding h1 {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 768px) {
+  header .branding h1 {
+    text-align: left;
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 992px) {
+  header .branding h1 {
+    font-size: 1.8em;
+  }
+}
+header .branding h1 span {
+  font-family: "Tusker Grotesk 4";
+  font-weight: 300;
+  color: #00ffce;
+  font-size: 1em;
+  margin-left: 0.25em;
+}
+@media (min-width: 768px) {
+  header .branding h1 span {
+    font-size: 1em;
+  }
+}
+header nav a {
+  color: white;
+  font-size: 1.2em;
+}
+@media (min-width: 768px) {
+  header nav a {
+    font-size: 1.4em;
+  }
 }
 
 footer {
@@ -7416,6 +7573,137 @@ footer {
   color: #666;
   text-align: right;
   font-size: 0.8em;
+}
+
+div.background-grid-effect {
+  position: fixed;
+  width: 150vw;
+  height: 150vh;
+  left: -25vw;
+  top: -25vh;
+  background-image: url("/images/tile-256-white-10-2px.png");
+  background-size: 128px;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  z-index: -10000;
+}
+
+.gutenberg-content h2,
+.editor-styles-wrapper h2 {
+  color: white;
+}
+.gutenberg-content h3,
+.editor-styles-wrapper h3 {
+  margin-bottom: 0.5em;
+}
+.gutenberg-content ul strong,
+.editor-styles-wrapper ul strong {
+  font-family: "Tusker Grotesk 4";
+  font-weight: 400;
+  font-size: 1.7em;
+}
+.gutenberg-content hr,
+.editor-styles-wrapper hr {
+  border-top: 2px dashed #00ffce;
+}
+.gutenberg-content pre.wp-block-code,
+.editor-styles-wrapper pre.wp-block-code {
+  background-color: black;
+  color: #00ffce;
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+  tab-size: 2em;
+}
+.gutenberg-content .wp-block-columns,
+.editor-styles-wrapper .wp-block-columns {
+  display: flex;
+  flex-direction: row;
+  margin: 1em 0;
+}
+@media (max-width: 767.98px) {
+  .gutenberg-content .wp-block-columns,
+  .editor-styles-wrapper .wp-block-columns {
+    flex-wrap: wrap;
+  }
+}
+.gutenberg-content .wp-block-columns .wp-block-column,
+.editor-styles-wrapper .wp-block-columns .wp-block-column {
+  margin-right: 3%;
+}
+@media (max-width: 767.98px) {
+  .gutenberg-content .wp-block-columns .wp-block-column,
+  .editor-styles-wrapper .wp-block-columns .wp-block-column {
+    flex-basis: 100% !important;
+  }
+}
+.gutenberg-content .wp-block-columns .wp-block-column:last-child,
+.editor-styles-wrapper .wp-block-columns .wp-block-column:last-child {
+  margin-right: 0;
+}
+.gutenberg-content .wp-block-columns img,
+.editor-styles-wrapper .wp-block-columns img {
+  width: 100%;
+  height: auto;
+}
+.gutenberg-content .wp-block-buttons div,
+.editor-styles-wrapper .wp-block-buttons div {
+  display: inline-block;
+  margin-right: 10px;
+}
+.gutenberg-content .wp-block-buttons div a,
+.editor-styles-wrapper .wp-block-buttons div a {
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid #ff0080;
+  color: #ff0080;
+  transition: 0.3s;
+}
+.gutenberg-content .wp-block-buttons div a:hover,
+.editor-styles-wrapper .wp-block-buttons div a:hover {
+  color: #111;
+  background-color: #ff0080;
+}
+.gutenberg-content .wp-block-buttons div.disabled a,
+.editor-styles-wrapper .wp-block-buttons div.disabled a {
+  pointer-events: none;
+  filter: saturate(0) brightness(1.8);
+}
+.gutenberg-content .wp-block-embed.is-type-video .wp-block-embed__wrapper,
+.editor-styles-wrapper .wp-block-embed.is-type-video .wp-block-embed__wrapper {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.gutenberg-content .wp-block-embed.is-type-video iframe,
+.editor-styles-wrapper .wp-block-embed.is-type-video iframe {
+  width: 100%;
+  height: 100%;
+}
+.gutenberg-content .wp-block-gallery,
+.editor-styles-wrapper .wp-block-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gutenberg-content .wp-block-gallery figure,
+.editor-styles-wrapper .wp-block-gallery figure {
+  width: 48%;
+}
+@media (max-width: 767.98px) {
+  .gutenberg-content .wp-block-gallery figure,
+  .editor-styles-wrapper .wp-block-gallery figure {
+    width: 100%;
+  }
+}
+.gutenberg-content .wp-block-gallery figure img,
+.editor-styles-wrapper .wp-block-gallery figure img {
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid #ff0080;
+  border-right: 5px solid #ff0080;
 }
 
 section#home-intro {
@@ -7499,16 +7787,6 @@ section#home-intro .hero-image img {
   filter: grayscale(1);
 }
 
-section#home-portfolio-list h2 {
-  margin: 10vw auto 5vw;
-  text-align: center;
-  font-family: "Tusker Grotesk 9";
-  font-weight: 600;
-  color: #00ffce;
-  text-shadow: 8px 8px 0 #ff0080;
-  font-size: 4.5vw;
-  font-size: max(4.5vw, 30px);
-}
 section#home-portfolio-list .project-item {
   position: relative;
 }
@@ -7526,15 +7804,16 @@ section#home-portfolio-list .project-item {
   }
 }
 @media (min-width: 992px) {
-  section#home-portfolio-list .project-item.flipped .offsetter {
+  section#home-portfolio-list .project-item.flipped .project .offsetter {
     order: 1;
   }
-  section#home-portfolio-list .project-item.flipped .details {
+  section#home-portfolio-list .project-item.flipped .project .details {
     text-align: left;
     order: 3;
   }
-  section#home-portfolio-list .project-item.flipped .image-holder {
+  section#home-portfolio-list .project-item.flipped .project .image-holder {
     order: 2;
+    left: -35px;
   }
 }
 section#home-portfolio-list .project-item .project {
@@ -7559,10 +7838,11 @@ section#home-portfolio-list .project-item .project:hover .details .see-project s
 }
 section#home-portfolio-list .project-item .project .image-holder {
   padding-bottom: 10px;
+  left: 30px;
 }
-@media (max-width: 767.98px) {
-  section#home-portfolio-list .project-item .project .image-holder .scroll-parallax-parent > div {
-    transform: none !important;
+@media (min-width: 768px) {
+  section#home-portfolio-list .project-item .project .image-holder {
+    position: relative;
   }
 }
 section#home-portfolio-list .project-item .project .image-holder .image {
@@ -7583,8 +7863,6 @@ section#home-portfolio-list .project-item .project .details {
   z-index: 100;
 }
 section#home-portfolio-list .project-item .project .details h3 {
-  font-family: "Tusker Grotesk 4";
-  font-weight: 500;
   color: #00ffce;
   font-size: 4.5vw;
   font-size: max(4.5vw, 30px);
@@ -7623,10 +7901,93 @@ section#home-portfolio-list .project-item .project .details .see-project span {
   }
 }
 .text-block h2 {
-  margin-bottom: 0.3em;
-  font-size: 2.5em;
-  font-family: "Tusker Grotesk 6";
-  font-weight: 600;
   color: #00ffce;
   text-shadow: 8px 8px 0 #ff0080;
+}
+
+.project-single nav {
+  z-index: 10000;
+  border-bottom: 2px dashed #444;
+  padding: 20px 0 15px;
+}
+.project-single nav a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.project-single nav a span {
+  position: relative;
+  left: 0;
+  transition: left 0.3s;
+}
+.project-single nav a:hover {
+  color: #00ffce;
+}
+.project-single nav a:hover span {
+  left: -10px;
+}
+.project-single h1 {
+  font-family: "Tusker Grotesk 8";
+  font-weight: 800;
+  color: #00ffce;
+  padding-top: 8vw;
+  font-size: 3em;
+  hyphens: auto;
+}
+@media (min-width: 374px) {
+  .project-single h1 {
+    font-size: 3.75em;
+  }
+}
+@media (min-width: 768px) {
+  .project-single h1 {
+    font-size: 8.1vw;
+  }
+}
+.project-single h2 {
+  font-family: "Tusker Grotesk 7";
+  font-weight: 700;
+  color: #ff0080;
+  font-size: 3em;
+}
+@media (min-width: 768px) {
+  .project-single h2 {
+    font-size: 4vw;
+  }
+}
+.project-single h2 em {
+  font-style: normal;
+  font-family: "Tusker Grotesk 3";
+  font-weight: 200;
+}
+.project-single h3 {
+  color: white;
+  font-size: 2em;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .project-single h3 {
+    font-size: 4vw;
+  }
+}
+.project-single hr {
+  margin: 30px auto;
+  opacity: 1;
+  border: 0;
+  border-top: 2px dashed #666;
+}
+.project-single .overlapper {
+  margin-top: -100px;
+}
+
+section#blog-archive ul {
+  list-style: none;
+  padding-left: 0;
+}
+section#blog-archive ul li {
+  padding: 1.5em 0;
+  border-bottom: 1px dashed #ff0080;
+}
+section#blog-archive ul li:last-child {
+  border-bottom: none;
 }
