@@ -1,5 +1,4 @@
 import '@/scss/index.scss'
-import Footer from '@/components/footer'
 
 export const metadata = {
 	title: 'Chris Silich',
@@ -21,11 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					rel="stylesheet"
 				/>
 			</head>
-			<body>
-				{children}
-
-				{/* Todo: add Google Analytics */}
-			</body>
+			<body>{children}</body>
 		</html>
 	)
 }
