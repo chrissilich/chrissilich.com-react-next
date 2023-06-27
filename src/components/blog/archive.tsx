@@ -1,4 +1,5 @@
 import { BlogPost } from '@/interfaces/blog'
+import Link from 'next/link'
 
 export default function BlogArchive({ posts }: { posts: BlogPost[] }) {
 	return (
@@ -9,7 +10,7 @@ export default function BlogArchive({ posts }: { posts: BlogPost[] }) {
 					<li key={post.id}>
 						<h4>{post.title.rendered}</h4>
 						<div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}></div>
-						<a href={'/blog/' + post.slug}>Read Post</a>
+						<Link href={'/blog/' + post.slug}>Read Post</Link>
 					</li>
 				))}
 			</ul>

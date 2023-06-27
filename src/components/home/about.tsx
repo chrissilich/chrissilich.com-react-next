@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function HomeAbout() {
 	return (
 		<section id="home-about" className="text-block container-fluid">
@@ -9,37 +11,37 @@ export default function HomeAbout() {
 				</p>
 				<p>
 					His tech skills are strongest in{' '}
-					<a href="https://vuejs.org/" target="_blank">
+					<Link href="https://vuejs.org/" target="_blank">
 						Vue
-					</a>
+					</Link>
 					,{' '}
-					<a href="https://sass-lang.com/" target="_blank">
+					<Link href="https://sass-lang.com/" target="_blank">
 						SCSS
-					</a>
+					</Link>
 					, and{' '}
-					<a href="https://wordpress.org/" target="_blank">
+					<Link href="https://wordpress.org/" target="_blank">
 						Wordpress
-					</a>
+					</Link>
 					, but he also has plenty of experience in{' '}
-					<a href="https://reactjs.org/" target="_blank">
+					<Link href="https://reactjs.org/" target="_blank">
 						React
-					</a>
+					</Link>
 					,{' '}
-					<a href="https://greensock.com/gsap/" target="_blank">
+					<Link href="https://greensock.com/gsap/" target="_blank">
 						GSAP
-					</a>
+					</Link>
 					,{' '}
-					<a href="https://laravel.com/" target="_blank">
+					<Link href="https://laravel.com/" target="_blank">
 						Laravel
-					</a>
+					</Link>
 					,{' '}
-					<a href="https://unity.com/" target="_blank">
+					<Link href="https://unity.com/" target="_blank">
 						Unity
-					</a>
+					</Link>
 					,{' '}
-					<a href="https://nodejs.org/en/" target="_blank">
+					<Link href="https://nodejs.org/en/" target="_blank">
 						Node
-					</a>
+					</Link>
 					, and a lot of CSS and UI frameworks.
 				</p>
 				<p>

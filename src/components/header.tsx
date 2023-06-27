@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
 export default function Header({ mode = 'default' }: { mode?: string }) {
@@ -23,17 +24,17 @@ export default function Header({ mode = 'default' }: { mode?: string }) {
 			<div className="container">
 				<div className="row ">
 					<div className="branding col-12 col-md-auto ">
-						<a href="/">
+						<Link href="/">
 							<h1>
 								Chris Silich
 								<span>Creative Technologist</span>
 							</h1>
-						</a>
+						</Link>
 					</div>
 					<nav className="col-12 col-md-auto d-flex flex-grow-1 justify-content-evenly align-items-center">
-						<a href="/#projects">Projects</a>
-						<a href="/blog">Blog</a>
-						<a href="/#contact">Contact</a>
+						<Link href="/#home-portfolio-list">Projects</Link>
+						<Link href="/blog">Blog</Link>
+						<Link href="/#home-contact">Contact</Link>
 					</nav>
 				</div>
 			</div>
