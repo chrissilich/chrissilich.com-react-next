@@ -1,0 +1,13 @@
+// Adds a pseudo element to expand the clickable area of an element
+// The clickable area will be expanded to match the first ascendant element with a position other than static
+.expand-clickable-area {
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}

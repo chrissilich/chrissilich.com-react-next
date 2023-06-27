@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default async function HomePortfolioListItem({ project }: { project: Project }) {
 	return (
 		<section id={project.slug} className={'project-item row ' + (project.acf.flipped ? 'flipped' : '')}>
-			<a href={'projects/' + project.slug} className="project d-flex flex-wrap">
+			<div className="project d-flex flex-wrap">
 				<div
 					className={
 						'offsetter col d-none d-lg-block ' +
@@ -20,9 +20,9 @@ export default async function HomePortfolioListItem({ project }: { project: Proj
 					<h3>{project.title.rendered}</h3>
 					<h4>{project.acf.medium}</h4>
 					<p>{project.acf.description_on_home}</p>
-					<p className="see-project">
+					<a href={'projects/' + project.slug} className="see-project expand-clickable-area">
 						See Project <span>&rarr;</span>
-					</p>
+					</a>
 				</div>
 				<div
 					className={
@@ -49,7 +49,7 @@ export default async function HomePortfolioListItem({ project }: { project: Proj
 					</div>
 					{/* </scroll-parallax> */}
 				</div>
-			</a>
+			</div>
 		</section>
 	)
 }
