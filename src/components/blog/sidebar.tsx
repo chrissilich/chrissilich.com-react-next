@@ -1,4 +1,5 @@
 import { BlogPost } from '@/interfaces/blog'
+import Link from 'next/link'
 
 export default function BlogSidebar({ posts }: { posts: BlogPost[] }) {
 	return (
@@ -7,7 +8,7 @@ export default function BlogSidebar({ posts }: { posts: BlogPost[] }) {
 			<ul>
 				{posts.map((post) => (
 					<li key={post.id}>
-						<a href={`/blog/${post.slug}`}>{post.title.rendered}</a>
+						<Link href={`/blog/${post.slug}`}>{post.title.rendered}</Link>
 					</li>
 				))}
 			</ul>

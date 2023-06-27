@@ -4,7 +4,6 @@ import Image from 'next/image'
 export default async function HomePortfolioListItem({ project }: { project: Project }) {
 	return (
 		<section id={project.slug} className={'project-item row ' + (project.acf.flipped ? 'flipped' : '')}>
-			<a id={project.slug}></a>
 			<a href={'projects/' + project.slug} className="project d-flex flex-wrap">
 				<div
 					className={

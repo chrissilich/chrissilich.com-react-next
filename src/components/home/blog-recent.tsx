@@ -1,4 +1,5 @@
 import { getPostArchive } from '@/services/blog'
+import Link from 'next/link'
 
 export default async function BlogRecent() {
 	const posts = await getPostArchive()
@@ -12,7 +13,7 @@ export default async function BlogRecent() {
 				<div className="col-12 col-md-10 offset-md-1 ">
 					{recentPosts.map((post) => (
 						<p key={post.id}>
-							<a href={`/blog/${post.slug}`}>{post.title.rendered}</a> &mdash;{' '}
+							<Link href={`/blog/${post.slug}`}>{post.title.rendered}</Link> &mdash;{' '}
 							<em>Posted on {new Date(post.date).toLocaleDateString()}</em>
 						</p>
 					))}

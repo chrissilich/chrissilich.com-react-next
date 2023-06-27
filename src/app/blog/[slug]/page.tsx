@@ -6,6 +6,7 @@ import Background from '@/components/background'
 import Footer from '@/components/footer'
 
 import { getPostSingle, getPostArchive } from '@/services/blog'
+import Link from 'next/link'
 
 export default async function BlogSinglePage({ params }: { params: { slug: string } }) {
 	const post = await getPostSingle(params.slug)
@@ -22,7 +23,7 @@ export default async function BlogSinglePage({ params }: { params: { slug: strin
 					<BlogSidebar posts={posts} />
 				</div>
 
-				<a href="/blog">Back to Blog Archive</a>
+				<Link href="/blog">Back to Blog Archive</Link>
 			</section>
 
 			<Background />
