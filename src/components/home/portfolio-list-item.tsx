@@ -3,53 +3,42 @@ import Image from 'next/image'
 
 export default async function HomePortfolioListItem({ project }: { project: Project }) {
 	return (
-		<section id={project.slug} className={'project-item row ' + (project.acf.flipped ? 'flipped' : '')}>
-			<div className="project d-flex flex-wrap">
-				<div
-					className={
-						'offsetter col d-none d-lg-block ' +
-						(project.acf.project_pad ? 'col-lg-' + project.acf.project_pad : 'col-lg-1')
-					}
-				></div>
-				<div
-					className={
-						'details col d-flex flex-column justify-content-center col-12 col-md-6 offset-0 offset-md-0 ' +
-						(project.acf.description_columns ? 'col-lg-' + project.acf.description_columns : 'col-lg-5')
-					}
-				>
-					<h3>{project.title.rendered}</h3>
-					<h4>{project.acf.medium}</h4>
-					<p>{project.acf.description_on_home}</p>
-					<a href={'projects/' + project.slug} className="see-project expand-clickable-area">
-						See Project <span>&rarr;</span>
-					</a>
-				</div>
-				<div
-					className={
-						'image-holder col col-12 col-md-6 offset-0 offset-md-0 ' +
-						(project.acf.image_columns ? 'col-lg-' + project.acf.image_columns : 'col-lg-5')
-					}
-				>
-					{/* <scroll-parallax class="scroll-parallax-parent" direction="y" speed="0.1"> */}
-					<div className="image">
-						{project.main_image_media && (
-							<>
-								<Image
-									src={project.main_image_media.source_url}
-									width={800}
-									height={
-										800 *
-										(project.main_image_media.media_details.height /
-											project.main_image_media.media_details.width)
-									}
-									alt={project.title.rendered}
-								/>
-							</>
-						)}
-					</div>
-					{/* </scroll-parallax> */}
+		<div
+			id={project.slug}
+			className={`project-item ${project.acf.flipped ? 'project-item--flipped' : ''} project-item--pad-${
+				project.acf.project_pad
+			}`}
+		>
+			<div
+				className={`details d-flex flex-column justify-content-center details--size-${project.acf.description_columns}`}
+			>
+				<h3>{project.title.rendered}</h3>
+				<h4>{project.acf.medium}</h4>
+				<p>{project.acf.description_on_home}</p>
+				<a href={'projects/' + project.slug} className="see-project expand-clickable-area">
+					See Project <span>&rarr;</span>
+				</a>
+			</div>
+			<div
+				className={`image-holder col col-12 col-md-6 offset-0 offset-md-0 image-holder--size-${project.acf.image_columns}`}
+			>
+				<div className="image">
+					{project.main_image_media && (
+						<>
+							<Image
+								src={project.main_image_media.source_url}
+								width={800}
+								height={
+									800 *
+									(project.main_image_media.media_details.height /
+										project.main_image_media.media_details.width)
+								}
+								alt={project.title.rendered}
+							/>
+						</>
+					)}
 				</div>
 			</div>
-		</section>
+		</div>
 	)
 }
