@@ -11,7 +11,7 @@ export default async function ProjectArchive() {
 			<h1>Project Archive</h1>
 			<ul>
 				{projects.map((project) => (
-					<li>
+					<li key={project.id}>
 						<h1>{project.title.rendered}</h1>
 						<h2>
 							{project.acf.client} | {project.acf.medium}

@@ -1,8 +1,5 @@
 import { getPostArchive } from '@/services/blog'
 
-// import Image from 'next/image'
-// import styles from '@/app/page.module.css'
-
 export default async function BlogArchive() {
 	const posts = await getPostArchive()
 
@@ -11,7 +8,7 @@ export default async function BlogArchive() {
 			<h1>Blog Archive</h1>
 			<ul>
 				{posts.map((post) => (
-					<li>
+					<li key={post.id}>
 						{post.title.rendered}
 						<a href={'/blog/' + post.slug}>Read Post</a>
 					</li>

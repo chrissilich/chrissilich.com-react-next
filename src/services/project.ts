@@ -12,11 +12,9 @@ export const getProjectArchive = async () => {
 		projects.map(async (project) => {
 			if (project.acf.main_image) {
 				project.main_image_media = await getMedia(project.acf.main_image)
-				console.log('got image')
 			}
 		})
 	)
-	console.log('done with images')
 	return projects
 }
 
