@@ -25,7 +25,7 @@ export default function HomeIntro() {
 		})
 		gsap.from(splitH1.chars, {
 			x: -10,
-			y: '11vw',
+			y: '18vw',
 			rotation: -90,
 			transformOrigin: 'bottom left',
 			duration: 0.75,
@@ -33,7 +33,7 @@ export default function HomeIntro() {
 		})
 		gsap.from(splitH2.chars, {
 			x: -10,
-			y: 100,
+			y: '10vw',
 			delay: 0.5,
 			rotation: -90,
 			transformOrigin: 'bottom left',
@@ -61,33 +61,34 @@ export default function HomeIntro() {
 	}, [])
 
 	return (
-		<section id="home-intro" className="container-fluid row align-items-center">
-			<div className="order-2 order-md-1 col-10 offset-1 offset-md-0 col-md-8 hero-text d-flex flex-column justify-content-end">
-				<h1 style={{ opacity: 0 }} ref={nameElementRef}>
-					Chris<em>Silich</em>
-				</h1>
-				<h2 style={{ opacity: 0 }} ref={jobTitleElementRef}>
-					Creative <em>Technologist</em>
-				</h2>
+		<section className="home-intro">
+			{/* <ParallaxProvider> */}
+			{/* <Parallax speed={20}> */}
+			<div ref={imageParentElementRef} className="home-intro-headshot overflow-hidden" style={{ opacity: 0 }}>
+				<Image
+					ref={imageElementRef}
+					alt="Chris looking exceptionally thoughtful"
+					src="/images/Chris-11.jpg"
+					width={667}
+					height={1000}
+					className="img-fluid"
+					priority
+				/>
 			</div>
-			<div
-				style={{ opacity: 0 }}
-				ref={imageParentElementRef}
-				className="order-1 order-md-2 offset-1 offset-md-0 col-10 col-md-4 hero-image"
-			>
-				<ParallaxProvider>
-					<Parallax speed={10}>
-						<Image
-							ref={imageElementRef}
-							alt="Chris looking exceptionally thoughtful"
-							src="/images/Chris-11.jpg"
-							width={667}
-							height={1000}
-							className="img-fluid"
-							priority
-						/>
-					</Parallax>
-				</ParallaxProvider>
+			{/* </Parallax> */}
+			{/* </ParallaxProvider> */}
+
+			<div className="home-intro-text">
+				<div className="overflow-hidden">
+					<h1 style={{ opacity: 0 }} ref={nameElementRef}>
+						Chris<em>Silich</em>
+					</h1>
+				</div>
+				<div className="overflow-hidden">
+					<h2 style={{ opacity: 0 }} ref={jobTitleElementRef}>
+						Creative <em>Technologist</em>
+					</h2>
+				</div>
 			</div>
 		</section>
 	)

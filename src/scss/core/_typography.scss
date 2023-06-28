@@ -4,30 +4,43 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
 	line-height: 150%;
+	color: #e9ecef;
 }
 h1,
 .h1 {
+	color: white;
 	font-family: 'Tusker Grotesk 7', sans-serif;
 	font-weight: 600;
 	font-size: 3em;
 }
 h2,
 .h2 {
+	color: white;
 	font-family: 'Tusker Grotesk 6', sans-serif;
 	font-weight: 600;
 	font-size: 2.5em;
 }
 h3,
 .h3 {
+	color: white;
 	font-family: 'Tusker Grotesk 4', sans-serif;
 	font-weight: 500;
 	font-size: 2em;
 }
 h4,
 .h4 {
+	color: white;
 	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 	font-weight: 500;
+}
+
+a {
+	color: colors.$color-hero;
+	text-decoration: none;
+	&:hover {
+		color: colors.$color-hero-secondary;
+	}
 }
 
 p {

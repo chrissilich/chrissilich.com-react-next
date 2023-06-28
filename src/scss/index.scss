@@ -1,17 +1,24 @@
+// Variables
+@import './variables/sizing';
+@import './variables/colors';
+
 // Core
+@import './core/reset';
 @import './core/font-faces';
-@import './core/bootstrap-custom';
 @import './core/typography';
+@import './core/media-queries';
+@import './core/containers';
 
 // Major components
-@import './components/layout';
+@import './components/body';
 @import './components/header';
 @import './components/footer';
 @import './components/background';
+@import './components/buttons';
 @import './components/gutenberg';
 @import './components/expand-clickable-area';
 
 // Pages
-@import './components/home';
-@import './components/project';
-@import './components/blog';
+@import './pages/home';
+// @import './pages/project';
+// @import './pages/blog';

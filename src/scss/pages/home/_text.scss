@@ -1,12 +1,13 @@
 @use '../../variables/colors';
 
 .text-block {
+	@extend .container;
 	background: rgba(0, 0, 0, 0.2);
 	padding-top: 6vw;
 	padding-bottom: 6vw;
 	font-size: 1.1em;
 	line-height: 150%;
-	@include media-breakpoint-up(md) {
+	@include bp(md) {
 		font-size: 1.3em;
 	}
 	h2 {

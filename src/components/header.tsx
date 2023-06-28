@@ -20,24 +20,20 @@ export default function Header({ mode = 'default' }: { mode?: string }) {
 	}, [])
 
 	return (
-		<header className={`container-fluid mode-${mode} ` + (scrollY > windowHeight ? 'show' : '')}>
-			<div className="container">
-				<div className="row ">
-					<div className="branding col-12 col-md-auto ">
-						<Link href="/">
-							<h1>
-								Chris Silich
-								<span>Creative Technologist</span>
-							</h1>
-						</Link>
-					</div>
-					<nav className="col-12 col-md-auto d-flex flex-grow-1 justify-content-evenly align-items-center">
-						<Link href="/#home-portfolio-list">Projects</Link>
-						<Link href="/blog">Blog</Link>
-						<Link href="/#home-contact">Contact</Link>
-					</nav>
-				</div>
+		<header className={`mode-${mode} ` + (scrollY > windowHeight ? 'show' : '')}>
+			<div className="branding">
+				<Link href="/">
+					<h1>
+						Chris Silich
+						<span>Creative Technologist</span>
+					</h1>
+				</Link>
 			</div>
+			<nav>
+				<Link href="/#home-portfolio-list">Projects</Link>
+				<Link href="/blog">Blog</Link>
+				<Link href="/#home-contact">Contact</Link>
+			</nav>
 		</header>
 	)
 }

@@ -7,6 +7,8 @@ body {
 }
 
 header {
+	@extend .container-full-width;
+	justify-content: space-between;
 	position: fixed;
 	top: -100px;
 	background: rgba(25, 25, 25, 0.75);
@@ -14,7 +16,7 @@ header {
 	transition: 0.5s;
 
 	padding: 1em 0em;
-	@include media-breakpoint-up(md) {
+	@include bp(md) {
 		padding: 1.5em 0.5em 1.4em;
 	}
 	&.show,
@@ -29,7 +31,7 @@ header {
 	.branding,
 	nav {
 		width: 100%;
-		@include media-breakpoint-up(md) {
+		@include bp(md) {
 			width: auto;
 		}
 	}
@@ -43,14 +45,14 @@ header {
 			text-align: center;
 			margin: 0.5em;
 
-			@include media-breakpoint-up(sm) {
+			@include bp(sm) {
 				font-size: 1.8em;
 			}
-			@include media-breakpoint-up(md) {
+			@include bp(md) {
 				text-align: left;
 				font-size: 1.4em;
 			}
-			@include media-breakpoint-up(lg) {
+			@include bp(lg) {
 				font-size: 1.8em;
 			}
 			span {
@@ -59,7 +61,7 @@ header {
 				color: colors.$color-hero;
 				font-size: 1em;
 				margin-left: 0.25em;
-				@include media-breakpoint-up(md) {
+				@include bp(md) {
 					font-size: 1em;
 				}
 			}
@@ -67,10 +69,17 @@ header {
 	}
 
 	nav {
+		display: flex;
+		align-items: center;
+
 		a {
 			color: white;
 			font-size: 1.2em;
-			@include media-breakpoint-up(md) {
+			margin-right: 3em;
+			&:last-child {
+				margin-right: 1em;
+			}
+			@include bp(md) {
 				font-size: 1.4em;
 			}
 		}

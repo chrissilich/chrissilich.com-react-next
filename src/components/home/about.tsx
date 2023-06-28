@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function HomeAbout() {
 	return (
-		<section id="home-about" className="text-block container-fluid">
+		<section className="home-about  text-block ">
 			<div className="offset-1 col-10 offset-lg-2 col-lg-8">
 				<h2>Who?</h2>
 				<p>

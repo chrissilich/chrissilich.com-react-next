@@ -1,0 +1,85 @@
+@use '../../variables/colors' as colors;
+
+section.home-intro {
+	@extend .container-full-width;
+	position: relative;
+	display: block;
+	// border: 1px solid greenyellow;
+
+	@include bp(md) {
+		height: 70vh;
+		min-height: max(50vw, 650px);
+		margin: 3em 0;
+	}
+
+	.home-intro-text {
+		z-index: 100;
+
+		@include bp(md) {
+			position: absolute;
+			top: 60%;
+			left: 5%;
+			transform: translate(0, -50%);
+		}
+
+		h1 {
+			font-family: 'Tusker Grotesk 8';
+			font-weight: 800;
+			color: colors.$color-hero;
+			transition: letter-spacing 0.2s;
+			font-size: 14vw;
+			margin: 6vw 0;
+			@include bp(md) {
+				font-size: 11.5vw;
+				margin: 5.5vw 0;
+			}
+			em {
+				font-family: 'Tusker Grotesk 4';
+				font-style: normal;
+				font-weight: 500;
+				letter-spacing: -0.03em;
+				color: colors.$color-hero-secondary;
+				transition: letter-spacing 0.2s;
+			}
+			&:hover {
+				letter-spacing: 0.02em;
+				em {
+					letter-spacing: -0.05em;
+				}
+			}
+		}
+		h2 {
+			font-family: 'Tusker Grotesk 2';
+			font-weight: 500;
+			font-size: 14vw;
+			margin: 6vw 0;
+			@include bp(md) {
+				font-size: 8.5vw;
+				margin: 3.5vw 0;
+			}
+			em {
+				font-style: normal;
+			}
+		}
+	}
+	.home-intro-headshot {
+		width: 72%;
+		margin: 0 0% -30% auto;
+		aspect-ratio: 3/5;
+
+		@include bp(md) {
+			width: 40%;
+			position: absolute;
+			top: 50%;
+			right: 5%;
+			transform: translate(0, -50%);
+		}
+
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			filter: grayscale(1);
+		}
+	}
+}

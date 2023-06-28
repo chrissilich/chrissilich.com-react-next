@@ -1,0 +1,9 @@
+@use '../variables/sizing' as sizing;
+
+@mixin bp($breakpoint) {
+	@if map-has-key(sizing.$breakpoints, $breakpoint) {
+		@media (min-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	}
+}

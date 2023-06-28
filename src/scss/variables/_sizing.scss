@@ -1,0 +1,12 @@
+$breakpoints: (
+	'xs': 375px,
+	'sm': 576px,
+	'md': 768px,
+	'lg': 992px,
+	'xl': 1200px,
+	'xxl': 1400px,
+);
+
+$max-width: 1400px;
+$gutters: 2em;
+$gutters-mobile: 1.25em;
