@@ -1,7 +1,7 @@
 import { getProjectArchive } from '@/services/project'
 
 import Image from 'next/image'
-// import styles from '@/app/page.module.css'
+import Link from 'next/link'
 
 export default async function ProjectArchive() {
 	const projects = await getProjectArchive()
@@ -24,7 +24,7 @@ export default async function ProjectArchive() {
 								alt={project.title.rendered}
 							/>
 						)}
-						<a href={'/projects/' + project.slug}>See Project</a>
+						<Link href={'/projects/' + project.slug}>See Project</Link>
 					</li>
 				))}
 			</ul>

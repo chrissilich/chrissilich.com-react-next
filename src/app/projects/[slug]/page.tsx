@@ -1,4 +1,5 @@
 import { getProjectSingle } from '@/services/project'
+import Link from 'next/link'
 
 export default async function ProjectSingle({ params }: { params: { slug: string } }) {
 	const project = await getProjectSingle(params.slug)
@@ -20,7 +21,7 @@ export default async function ProjectSingle({ params }: { params: { slug: string
 					<p>Project not found.</p>
 				</>
 			)}
-			<a href="/projects">Back to Archive</a>
+			<Link href="/projects">Back to Archive</Link>
 		</main>
 	)
 }

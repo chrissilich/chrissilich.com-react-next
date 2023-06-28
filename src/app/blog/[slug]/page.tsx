@@ -1,4 +1,5 @@
 import { getPostSingle } from '@/services/blog'
+import Link from 'next/link'
 
 // import Image from 'next/image'
 // import styles from '@/app/page.module.css'
@@ -21,7 +22,7 @@ export default async function BlogSingle({ params }: { params: { slug: string } 
 					<p>Post not found.</p>
 				</>
 			)}
-			<a href="/blog">Back to Archive</a>
+			<Link href="/blog">Back to Archive</Link>
 		</main>
 	)
 }
