@@ -1,7 +1,10 @@
 @use 'sass:math';
 @use '../../variables/colors';
 
-section#home-portfolio-list {
+section.home-portfolio-list {
+	@extend .container;
+	flex-direction: column;
+
 	.project-item {
 		position: relative;
 		display: flex;
@@ -10,7 +13,7 @@ section#home-portfolio-list {
 		padding-top: 2.5rem;
 		padding-bottom: 2.5rem;
 
-		@include media-breakpoint-up(lg) {
+		@include bp(lg) {
 			justify-content: flex-start;
 			@for $i from 1 through 9 {
 				&--pad-#{$i} {
@@ -25,10 +28,8 @@ section#home-portfolio-list {
 				}
 				.image-holder {
 					order: 2;
-					@include media-breakpoint-up(lg) {
+					@include bp(lg) {
 						left: -35px;
-					}
-					.image {
 					}
 				}
 			}
@@ -54,18 +55,17 @@ section#home-portfolio-list {
 		}
 
 		.image-holder {
-			// overflow: hidden;
 			padding-bottom: 10px;
 			order: 1;
 			margin-bottom: 20px;
 			width: 99%;
-			@include media-breakpoint-up(sm) {
+			@include bp(sm) {
 				order: 2;
 				margin-left: 1em;
 				width: 48%;
 			}
 
-			@include media-breakpoint-up(lg) {
+			@include bp(lg) {
 				position: relative;
 				left: 30px;
 				margin-left: 0;
@@ -84,6 +84,7 @@ section#home-portfolio-list {
 				width: 100%;
 				transition: 0.2s;
 				img {
+					display: block;
 					width: 100%;
 					height: auto;
 					transition: 0.2s;
@@ -95,13 +96,13 @@ section#home-portfolio-list {
 			z-index: 100;
 			order: 2;
 			width: 100%;
-			@include media-breakpoint-up(sm) {
+			@include bp(sm) {
 				order: 1;
 				width: 48%;
 				text-align: right;
 			}
 
-			@include media-breakpoint-up(lg) {
+			@include bp(lg) {
 				@for $i from 1 through 9 {
 					&--size-#{$i} {
 						width: percentage(math.div($i, 12));

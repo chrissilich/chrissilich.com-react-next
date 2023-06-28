@@ -30,9 +30,9 @@ export default function Header({ mode = 'default' }: { mode?: string }) {
 				</Link>
 			</div>
 			<nav>
-				<Link href="/#home-portfolio-list">Projects</Link>
+				<Link href="/#portfolio">Projects</Link>
 				<Link href="/blog">Blog</Link>
-				<Link href="/#home-contact">Contact</Link>
+				<Link href="/#contact">Contact</Link>
 			</nav>
 		</header>
 	)

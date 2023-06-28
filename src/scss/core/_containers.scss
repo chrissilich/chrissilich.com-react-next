@@ -6,6 +6,7 @@
 
 .container-full-width {
 	display: flex;
+	flex-direction: column;
 	width: 100%;
 	padding: sizing.$gutters-mobile;
 	@include bp(md) {
@@ -22,4 +23,25 @@
 .overflow-hidden {
 	overflow: hidden;
 	// border: 1px solid rgb(215, 32, 215);
+}
+
+.columns {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	@include bp(md) {
+		flex-direction: row;
+	}
+	> * {
+		@include bp(md) {
+			flex: 1 1 auto;
+			padding: 0 sizing.$gutters;
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
 }

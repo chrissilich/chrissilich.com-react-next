@@ -1,2 +1,11 @@
-#blog-single {
+section.blog-single {
+	@extend .container;
+
+	article {
+		width: 75%;
+	}
+	aside {
+		margin-top: 12rem;
+		width: 25%;
+	}
 }

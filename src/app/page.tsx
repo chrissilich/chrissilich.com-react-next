@@ -20,9 +20,9 @@ export default function Home() {
 
 			<PortfolioList />
 
-			{/*<BlogRecent />
+			<BlogRecent />
 
-			<Contact />*/}
+			<Contact />
 
 			<Footer />
 

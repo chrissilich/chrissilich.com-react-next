@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 export default function HomeAbout() {
 	return (
-		<section className="home-about  text-block ">
-			<div className="offset-1 col-10 offset-lg-2 col-lg-8">
-				<h2>Who?</h2>
+		<section className="home-about">
+			<div className="home-about-content">
+				<h2 className="shadow">Who?</h2>
 				<p>
 					Chris is a talented and thoughtful software developer, graphic designer, and creative technologist,
 					open to new opportunities.

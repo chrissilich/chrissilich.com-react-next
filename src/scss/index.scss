@@ -13,6 +13,7 @@
 @import './components/body';
 @import './components/header';
 @import './components/footer';
+@import './components/hr';
 @import './components/background';
 @import './components/buttons';
 @import './components/gutenberg';
@@ -21,4 +22,4 @@
 // Pages
 @import './pages/home';
 // @import './pages/project';
-// @import './pages/blog';
+@import './pages/blog';

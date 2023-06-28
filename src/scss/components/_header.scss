@@ -8,6 +8,7 @@ body {
 
 header {
 	@extend .container-full-width;
+	flex-direction: row;
 	justify-content: space-between;
 	position: fixed;
 	top: -100px;

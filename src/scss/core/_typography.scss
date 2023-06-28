@@ -5,6 +5,7 @@ body {
 	font-weight: 500;
 	line-height: 150%;
 	color: #e9ecef;
+	line-height: 150%;
 }
 h1,
 .h1 {
@@ -35,9 +36,33 @@ h4,
 	font-weight: 500;
 }
 
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	line-height: 110%;
+	margin-top: 0.4rem;
+	margin-bottom: 0.4rem;
+}
+
+p {
+	line-height: 140%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
 a {
 	color: colors.$color-hero;
 	text-decoration: none;
+	transition: color 0.1s linear;
 	&:hover {
 		color: colors.$color-hero-secondary;
 	}
@@ -87,7 +112,7 @@ aside {
 
 // Special variation on headers
 h2.fat {
-	margin: 10vw auto 5vw;
+	margin: 8rem auto 5rem;
 	text-align: center;
 	font-family: 'Tusker Grotesk 9';
 	font-weight: 600;
@@ -95,4 +120,11 @@ h2.fat {
 	text-shadow: 8px 8px 0 colors.$color-hero-secondary;
 	font-size: 4.5vw;
 	font-size: max(4.5vw, 30px);
+}
+
+h1.shadow,
+h2.shadow {
+	margin: 2rem auto 2rem -1.5rem;
+	color: colors.$color-hero;
+	text-shadow: 8px 8px 0 colors.$color-hero-secondary;
 }

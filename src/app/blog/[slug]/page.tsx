@@ -16,8 +16,8 @@ export default async function BlogSinglePage({ params }: { params: { slug: strin
 		<>
 			<Header />
 
-			<section id="blog-single" className="container">
-				<div className="row">
+			<section className="blog-single">
+				<div className="columns">
 					{post && <BlogSingle post={post} />}
 					{!post && <Blog404 />}
 					<BlogSidebar posts={posts} />
