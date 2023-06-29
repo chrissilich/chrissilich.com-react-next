@@ -14,10 +14,14 @@ header {
 	background: rgba(25, 25, 25, 0.75);
 	z-index: 1030;
 	transform: translateY(-100%);
-	transition: 0.5s;
 	padding: 1rem 2rem 0.9rem;
 	border-bottom: 1px solid rgba(230, 230, 230, 0.2);
 	backdrop-filter: blur(3px);
+
+	transition: 0.5s;
+	@include reduce-motion {
+		transition: none;
+	}
 
 	@include bp(md) {
 		flex-direction: row;
