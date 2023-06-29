@@ -1,9 +1,23 @@
-$color-site-background: #1d1d1d;
+@import '../core/media-queries';
 
-$color-hero: #00ffce;
-$color-hero-tint: lighten($color-hero, 20%);
-$color-hero-shade: darken($color-hero, 20%);
+:root {
+	--color-site-background: #1d1d1d;
 
-$color-hero-secondary: #ff0080;
-$color-hero-secondary-tint: lighten($color-hero-secondary, 20%);
-$color-hero-secondary-shade: darken($color-hero-secondary, 20%);
+	--color-hero: #00ffce;
+	--color-hero-tint: #befffb;
+	--color-hero-shade: #00bd97;
+
+	--color-secondary: #ff0080;
+	--color-secondary-tint: #ffc3c3;
+	--color-secondary-shade: #c90065;
+
+	--color-muted: #777;
+	--color-muted-tint: #ddd;
+	--color-muted-shade: #333;
+
+	@include increase-contrast {
+		--color-hero: var(--color-hero-tint);
+		--color-secondary: var(--color-secondary-tint);
+		--color-muted: var(--color-muted-tint);
+	}
+}

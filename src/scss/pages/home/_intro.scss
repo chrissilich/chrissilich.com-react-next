@@ -23,7 +23,7 @@ section.home-intro {
 		h1 {
 			font-family: 'Tusker Grotesk 8';
 			font-weight: 800;
-			color: colors.$color-hero;
+			color: var(--color-hero);
 			transition: letter-spacing 0.2s;
 			font-size: 14vw;
 			margin: 0;
@@ -35,7 +35,7 @@ section.home-intro {
 				font-style: normal;
 				font-weight: 500;
 				letter-spacing: -0.03em;
-				color: colors.$color-hero-secondary;
+				color: var(--color-secondary);
 				transition: letter-spacing 0.2s;
 			}
 			&:hover {

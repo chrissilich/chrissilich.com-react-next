@@ -42,7 +42,7 @@ header {
 		h1 {
 			font-family: 'Tusker Grotesk 7';
 			font-weight: 300;
-			color: colors.$color-hero-secondary;
+			color: var(--color-secondary);
 			font-size: 5.1vw;
 			text-align: center;
 			margin: 0.5em 0;
@@ -59,7 +59,7 @@ header {
 			span {
 				font-family: 'Tusker Grotesk 4';
 				font-weight: 300;
-				color: colors.$color-hero;
+				color: var(--color-hero);
 				font-size: 1em;
 				margin-left: 0.25em;
 				@include bp(md) {
