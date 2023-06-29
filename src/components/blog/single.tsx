@@ -7,7 +7,15 @@ export default function BlogSingle({ post }: { post: BlogPost }) {
 			<hr />
 			<div className="gutenberg-content">
 				<p>
-					<em>Posted on {new Date(post.date).toLocaleDateString()}</em>
+					<em>
+						Posted{' '}
+						{new Date(post.date).toLocaleString('en-US', {
+							weekday: 'long',
+							day: 'numeric',
+							year: 'numeric',
+							month: 'long',
+						})}
+					</em>
 				</p>
 				<div dangerouslySetInnerHTML={{ __html: post.content.rendered }}></div>
 			</div>
