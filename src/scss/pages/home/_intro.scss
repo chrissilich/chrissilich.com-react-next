@@ -11,8 +11,10 @@ section.home-intro {
 	}
 
 	.home-intro-text {
+		position: relative;
 		z-index: 100;
 
+		transform: translate(0, 50.5%);
 		@include bp(md) {
 			position: absolute;
 			top: 50%;
@@ -67,13 +69,16 @@ section.home-intro {
 		}
 	}
 	.home-intro-headshot {
-		width: 72%;
+		position: relative;
+		z-index: 50;
+		width: 75%;
 		margin: 0 0% -30% auto;
-		aspect-ratio: 7/10;
+		aspect-ratio: 6/10;
 
 		@include bp(md) {
 			width: 35%;
 			position: absolute;
+			aspect-ratio: 7/10;
 			top: 50%;
 			left: 58.4%;
 			transform: translate(0, -50%);
