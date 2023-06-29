@@ -37,6 +37,7 @@
 	.column {
 		width: 100%;
 		@include bp(md) {
+			width: unset;
 			flex: 1 1 auto;
 			padding: 0 sizing.$gutters;
 			&:first-child {

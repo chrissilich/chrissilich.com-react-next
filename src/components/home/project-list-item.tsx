@@ -29,7 +29,7 @@ export default async function HomeProjectListItem({ project }: { project: Projec
 									(project.main_image_media.media_details.height /
 										project.main_image_media.media_details.width)
 								}
-								alt={project.title.rendered}
+								alt={'Image for project, ' + project.title.rendered}
 							/>
 						</>
 					)}
