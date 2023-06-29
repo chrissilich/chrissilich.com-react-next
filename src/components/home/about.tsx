@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function HomeAbout() {
 	return (
-		<section className="home-about">
+		<section id="main-content" className="home-about">
 			<div className="home-about-content">
 				<h2 className="shadow">Who?</h2>
 				<p>
@@ -15,6 +15,10 @@ export default function HomeAbout() {
 						Vue
 					</Link>
 					,{' '}
+					<Link href="https://reactjs.org/" target="_blank">
+						React
+					</Link>
+					,{' '}
 					<Link href="https://sass-lang.com/" target="_blank">
 						SCSS
 					</Link>
@@ -23,8 +27,8 @@ export default function HomeAbout() {
 						Wordpress
 					</Link>
 					, but he also has plenty of experience in{' '}
-					<Link href="https://reactjs.org/" target="_blank">
-						React
+					<Link href="https://nextjs.org/" target="_blank">
+						NextJS
 					</Link>
 					,{' '}
 					<Link href="https://greensock.com/gsap/" target="_blank">

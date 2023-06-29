@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function BlogArchive({ posts }: { posts: BlogPost[] }) {
 	return (
-		<section className="blog-archive">
+		<section id="main-content" className="blog-archive">
 			<h1 className="shadow">Blog Posts</h1>
 			<ul>
 				{posts.map((post) => (

@@ -8,9 +8,16 @@ import Footer from '@/components/footer'
 import { getPostSingle, getPostArchive } from '@/services/blog'
 import Link from 'next/link'
 
+export const metadata = {
+	title: 'Blog - Chris Silich',
+	description: 'Creative Technologist Portfolio',
+}
+
 export default async function BlogSinglePage({ params }: { params: { slug: string } }) {
 	const post = await getPostSingle(params.slug)
 	const posts = await getPostArchive()
+
+	metadata.title = post?.title.rendered + ' - Blog - Chris Silich' || 'Blog - Chris Silich'
 
 	return (
 		<>

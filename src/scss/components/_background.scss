@@ -4,11 +4,12 @@ div.background-grid-effect {
 	height: 100vh;
 	left: 0;
 	top: 0;
-	background-image: url('/images/tile-256-white-10-2px.png');
 	background-attachment: fixed;
 	background-position: 50% 50%;
 	z-index: -10000;
 	background-size: 64px;
+	background-image: url('/images/tile-256-white-10-2px.png');
+
 	@include bp(md) {
 		background-size: 128px;
 	}

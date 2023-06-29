@@ -27,6 +27,11 @@ section.home-intro {
 			transition: letter-spacing 0.2s;
 			font-size: 14vw;
 			margin: 0;
+
+			@include increase-contrast {
+				text-shadow: 0 0 0.1em rgba(0, 0, 0, 1);
+			}
+
 			@include bp(md) {
 				font-size: 11.5vw;
 			}
@@ -37,6 +42,9 @@ section.home-intro {
 				letter-spacing: -0.03em;
 				color: var(--color-secondary);
 				transition: letter-spacing 0.2s;
+			}
+			@include reduce-motion {
+				pointer-events: none;
 			}
 			&:hover {
 				letter-spacing: 0.02em;
@@ -75,7 +83,11 @@ section.home-intro {
 			object-fit: cover;
 			width: 100%;
 			height: 100%;
-			filter: grayscale(1);
+			filter: grayscale(0.75);
+
+			@include increase-contrast {
+				filter: grayscale(1) brightness(0.7);
+			}
 		}
 	}
 }

@@ -2,22 +2,25 @@
 
 :root {
 	--color-site-background: #1d1d1d;
+	--color-site-text: #fff;
 
 	--color-hero: #00ffce;
 	--color-hero-tint: #befffb;
-	--color-hero-shade: #00bd97;
+	--color-hero-shade: #088692;
 
 	--color-secondary: #ff0080;
-	--color-secondary-tint: #ffc3c3;
-	--color-secondary-shade: #c90065;
+	--color-secondary-small: #f8558b;
+	--color-secondary-tint: #ffc3cd;
+	--color-secondary-shade: #d3066d;
 
-	--color-muted: #777;
+	--color-muted: #878787;
 	--color-muted-tint: #ddd;
 	--color-muted-shade: #333;
 
 	@include increase-contrast {
 		--color-hero: var(--color-hero-tint);
 		--color-secondary: var(--color-secondary-tint);
+		--color-secondary-small: var(--color-secondary-tint);
 		--color-muted: var(--color-muted-tint);
 	}
 }

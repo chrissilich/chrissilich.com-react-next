@@ -11,12 +11,13 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: rgba(25, 25, 25, 0.75);
 	z-index: 1030;
 	transform: translateY(-100%);
 	padding: 1rem 2rem 0.9rem;
-	border-bottom: 1px solid rgba(230, 230, 230, 0.2);
 	backdrop-filter: blur(3px);
+
+	background: rgba(25, 25, 25, 0.75);
+	border-bottom: 1px solid rgba(230, 230, 230, 0.2);
 
 	transition: 0.5s;
 	@include reduce-motion {
@@ -83,7 +84,7 @@ header {
 			padding: 0;
 		}
 		a {
-			color: white;
+			color: var(--color-site-text);
 			font-size: 1.2em;
 			margin-right: 0;
 			@include bp(md) {

@@ -2,10 +2,12 @@
 
 .home-contact {
 	@extend .container-full-width;
-	background: rgba(0, 0, 0, 0.25);
 	margin-top: 8rem;
+	margin-bottom: 3rem;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
+	backdrop-filter: blur(2px);
+	background: rgba(0, 0, 0, 0.25);
 
 	.home-contact-content {
 		margin: 0 auto;

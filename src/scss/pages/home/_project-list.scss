@@ -127,13 +127,13 @@ section.home-project-list {
 			}
 			p {
 				font-size: 1.25vw;
-				font-size: max(1.25vw, 18px);
-				color: white;
+				font-size: clamp(16px, 1.25vw, 20px);
 			}
 			.see-project {
 				cursor: pointer;
-				color: var(--color-secondary);
+				color: var(--color-secondary-small);
 				transition: color 0.3s;
+				font-size: 1.1rem;
 				span {
 					position: relative;
 					left: 0px;

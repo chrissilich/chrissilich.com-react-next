@@ -6,8 +6,15 @@ import Project404 from '@/components/project/404'
 import Background from '@/components/background'
 import Footer from '@/components/footer'
 
+export const metadata = {
+	title: 'Project - Chris Silich',
+	description: 'Creative Technologist Portfolio',
+}
+
 export default async function ProjectSinglePage({ params }: { params: { slug: string } }) {
 	const project = await getProjectSingle(params.slug)
+
+	metadata.title = project?.title.rendered + ' - Project - Chris Silich' || 'Project - Chris Silich'
 
 	return (
 		<>

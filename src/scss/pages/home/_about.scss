@@ -2,10 +2,11 @@
 
 .home-about {
 	@extend .container-full-width;
-	background: rgba(0, 0, 0, 0.25);
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	margin-top: 2rem;
+	background: rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(2px);
 
 	@include bp(md) {
 		padding-top: 3rem;
