@@ -1,15 +1,15 @@
-import PortfolioListItem from './portfolio-list-item'
+import ProjectListItem from './project-list-item'
 import { getProjectArchive } from '@/services/project'
 
-export default async function HomePortfolioList() {
+export default async function HomeProjectList() {
 	const projects = await getProjectArchive()
 
 	return (
-		<section id="portfolio" className="home-portfolio-list">
+		<section id="portfolio" className="home-project-list">
 			<h2 className="fat">Selected Projects</h2>
 
 			{projects.map((project, index) => (
-				<PortfolioListItem key={index} project={project} />
+				<ProjectListItem key={index} project={project} />
 			))}
 		</section>
 	)

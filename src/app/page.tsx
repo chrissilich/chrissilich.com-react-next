@@ -1,7 +1,7 @@
 import Header from '@/components/header'
 import Intro from '@/components/home/intro'
 import About from '@/components/home/about'
-import PortfolioList from '@/components/home/portfolio-list'
+import ProjectList from '@/components/home/project-list'
 import BlogRecent from '@/components/home/blog-recent'
 import Contact from '@/components/home/contact'
 import Footer from '@/components/footer'
@@ -18,7 +18,7 @@ export default function Home() {
 
 			<About />
 
-			<PortfolioList />
+			<ProjectList />
 
 			<BlogRecent />
 

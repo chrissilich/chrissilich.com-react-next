@@ -4,11 +4,9 @@ section.home-intro {
 	@extend .container-full-width;
 	position: relative;
 	display: block;
-	// border: 1px solid greenyellow;
 
 	@include bp(md) {
-		height: 70vh;
-		min-height: max(65vw, 650px);
+		aspect-ratio: 16/9;
 		margin: 3em 0;
 	}
 
@@ -17,9 +15,9 @@ section.home-intro {
 
 		@include bp(md) {
 			position: absolute;
-			top: 60%;
+			top: 50%;
 			left: 5%;
-			transform: translate(0, -50%);
+			transform: translate(0, 17.5%);
 		}
 
 		h1 {
@@ -63,14 +61,13 @@ section.home-intro {
 	.home-intro-headshot {
 		width: 72%;
 		margin: 0 0% -30% auto;
-		aspect-ratio: 3/5;
+		aspect-ratio: 7/10;
 
 		@include bp(md) {
 			width: 35%;
-			max-width: 500px;
 			position: absolute;
 			top: 50%;
-			left: 60%;
+			left: 58.4%;
 			transform: translate(0, -50%);
 		}
 

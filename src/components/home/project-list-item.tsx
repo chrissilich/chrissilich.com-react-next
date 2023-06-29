@@ -1,7 +1,7 @@
 import { Project } from '@/interfaces/project'
 import Image from 'next/image'
 
-export default async function HomePortfolioListItem({ project }: { project: Project }) {
+export default async function HomeProjectListItem({ project }: { project: Project }) {
 	return (
 		<div
 			id={project.slug}

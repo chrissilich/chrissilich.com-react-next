@@ -2,7 +2,7 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 150%;
 	color: #e9ecef;
 	line-height: 150%;
@@ -12,21 +12,21 @@ h1,
 	color: white;
 	font-family: 'Tusker Grotesk 7', sans-serif;
 	font-weight: 600;
-	font-size: 3em;
+	font-size: 3rem;
 }
 h2,
 .h2 {
 	color: white;
 	font-family: 'Tusker Grotesk 6', sans-serif;
 	font-weight: 600;
-	font-size: 2.5em;
+	font-size: 2.5rem;
 }
 h3,
 .h3 {
 	color: white;
 	font-family: 'Tusker Grotesk 4', sans-serif;
 	font-weight: 500;
-	font-size: 2em;
+	font-size: 2rem;
 }
 h4,
 .h4 {
@@ -34,6 +34,7 @@ h4,
 	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 	font-weight: 500;
+	font-size: 1.7rem;
 }
 
 h1,
@@ -54,7 +55,7 @@ h6,
 }
 
 p {
-	line-height: 140%;
+	line-height: 150%;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }

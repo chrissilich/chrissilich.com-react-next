@@ -13,7 +13,7 @@ export default async function BlogRecent() {
 			{recentPosts.map((post) => (
 				<p key={post.id}>
 					<Link href={`/blog/${post.slug}`}>{post.title.rendered}</Link> &mdash;{' '}
-					<em>Posted on {new Date(post.date).toLocaleDateString()}</em>
+					<em>Posted {new Date(post.date).toLocaleDateString()}</em>
 				</p>
 			))}
 		</section>

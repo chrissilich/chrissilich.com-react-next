@@ -1,20 +1,22 @@
 @use 'sass:math';
 @use '../../variables/colors';
 
-section.home-portfolio-list {
-	@extend .container;
+section.home-project-list {
+	@extend .container-full-width;
 	flex-direction: column;
 
 	.project-item {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		flex-wrap: wrap;
 		padding-top: 2.5rem;
 		padding-bottom: 2.5rem;
 
 		@include bp(lg) {
 			justify-content: flex-start;
+			margin-right: auto;
 			@for $i from 1 through 9 {
 				&--pad-#{$i} {
 					margin-left: percentage(math.div($i, 12));

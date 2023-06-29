@@ -16,9 +16,9 @@ header {
 	z-index: 1030;
 	transition: 0.5s;
 
-	padding: 1em 0em;
+	padding: 1rem 2rem;
 	@include bp(md) {
-		padding: 1.5em 0.5em 1.4em;
+		padding: 2em 3rem;
 	}
 	&.show,
 	&.mode-default {
@@ -52,6 +52,7 @@ header {
 			@include bp(md) {
 				text-align: left;
 				font-size: 1.4em;
+				margin: 0;
 			}
 			@include bp(lg) {
 				font-size: 1.8em;
@@ -77,8 +78,17 @@ header {
 			color: white;
 			font-size: 1.2em;
 			margin-right: 3em;
+			@include bp(lg) {
+				margin-right: 4em;
+			}
+			@include bp(xl) {
+				margin-right: 5em;
+			}
+			@include bp(xxl) {
+				margin-right: 6em;
+			}
 			&:last-child {
-				margin-right: 1em;
+				margin-right: 0;
 			}
 			@include bp(md) {
 				font-size: 1.4em;

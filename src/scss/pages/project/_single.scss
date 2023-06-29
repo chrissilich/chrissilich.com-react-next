@@ -34,8 +34,9 @@
 		@media (min-width: 374px) {
 			font-size: 3.75em;
 		}
-		@include media-breakpoint-up(md) {
+		@include bp(md) {
 			font-size: 8.1vw;
+			font-size: min(8.1vw, 7.6rem);
 		}
 	}
 	h2 {
@@ -44,8 +45,9 @@
 		color: colors.$color-hero-secondary;
 		// margin-bottom: 2vw;
 		font-size: 3em;
-		@include media-breakpoint-up(md) {
-			font-size: 4vw;
+		@include bp(md) {
+			font-size: 3.8vw;
+			font-size: min(3.8vw, 3.6rem);
 		}
 		em {
 			font-style: normal;
@@ -58,19 +60,9 @@
 		// margin-bottom: 2em;
 		font-size: 2em;
 		font-weight: 300;
-		@include media-breakpoint-up(md) {
+		@include bp(md) {
 			font-size: 4vw;
+			font-size: min(4vw, 3.6rem);
 		}
-	}
-
-	hr {
-		margin: 30px auto;
-		opacity: 1;
-		border: 0;
-		border-top: 2px dashed #666;
-	}
-
-	.overlapper {
-		margin-top: -100px;
 	}
 }
