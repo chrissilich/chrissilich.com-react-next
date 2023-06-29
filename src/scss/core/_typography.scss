@@ -126,14 +126,11 @@ h2.fat {
 h1.shadow,
 h2.shadow {
 	color: var(--color-hero);
-	margin: 2rem auto 2rem 0;
+	margin: 2rem auto 1.5rem 0;
 	text-shadow: 8px 8px 0 var(--color-secondary);
 
 	@include increase-contrast {
 		color: var(--color-secondary);
 		text-shadow: none !important;
-	}
-	@include bp(md) {
-		margin: 2rem auto 2rem -1.5rem;
 	}
 }
