@@ -3,20 +3,23 @@
 
 .home-about {
 	@extend .container-full-width;
-	background: rgba(0, 0, 0, 0.2);
-	margin-top: 8rem;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+	background: rgba(0, 0, 0, 0.25);
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin-top: 2rem;
 
+	@include bp(md) {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		margin-top: 8rem;
+		font-size: 1.3em;
+	}
 	.home-about-content {
 		margin: 0 auto;
 		width: 100%;
 		max-width: map-get(sizing.$breakpoints, 'lg');
 		font-size: 1.1em;
 		line-height: 150%;
-	}
-	@include bp(md) {
-		font-size: 1.3em;
 	}
 	h2 {
 		color: colors.$color-hero;

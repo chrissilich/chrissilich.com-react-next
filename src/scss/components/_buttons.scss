@@ -1,5 +1,36 @@
-.btn[disabled] {
-	opacity: 0.8;
+@use '../variables/colors' as colors;
+
+%button {
+	display: inline-block;
+	font-size: 1.2em;
+	padding: 0.5em 1em;
+	margin: 0.15em;
+	text-decoration: none;
+	border-radius: 8px;
+	border: 1px solid colors.$color-hero-secondary;
+	color: colors.$color-hero-secondary;
+	transition: 0.3s;
+	&:hover {
+		color: #111;
+		background-color: colors.$color-hero-secondary;
+	}
+}
+%button-disabled {
 	pointer-events: none;
-	filter: saturate(0);
+	filter: saturate(0) brightness(1.8);
+}
+
+button,
+.button,
+.btn {
+	@extend %button;
+}
+
+button.disabled,
+button[disabled],
+.button.disabled,
+.button[disabled],
+.btn.disabled,
+.btn[disabled] {
+	@extend %button-disabled;
 }

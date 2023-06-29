@@ -8,25 +8,26 @@ body {
 
 header {
 	@extend .container-full-width;
-	flex-direction: row;
-	justify-content: space-between;
 	position: fixed;
-	top: -100px;
+	top: 0;
+	left: 0;
 	background: rgba(25, 25, 25, 0.75);
 	z-index: 1030;
+	transform: translateY(-100%);
 	transition: 0.5s;
+	padding: 1rem 2rem 0.9rem;
+	border-bottom: 1px solid rgba(230, 230, 230, 0.2);
+	backdrop-filter: blur(3px);
 
-	padding: 1rem 2rem;
 	@include bp(md) {
+		flex-direction: row;
+		justify-content: space-between;
 		padding: 2em 3rem;
 	}
+
 	&.show,
 	&.mode-default {
-		top: 0px;
-	}
-
-	a {
-		text-decoration: none;
+		transform: translateY(0);
 	}
 
 	.branding,
@@ -42,14 +43,12 @@ header {
 			font-family: 'Tusker Grotesk 7';
 			font-weight: 300;
 			color: colors.$color-hero-secondary;
-			font-size: 5.3vw;
+			font-size: 5.1vw;
 			text-align: center;
-			margin: 0.5em;
+			margin: 0.5em 0;
 
-			@include bp(sm) {
-				font-size: 1.8em;
-			}
 			@include bp(md) {
+				margin: 0.5em;
 				text-align: left;
 				font-size: 1.4em;
 				margin: 0;
@@ -73,11 +72,19 @@ header {
 	nav {
 		display: flex;
 		align-items: center;
-
+		justify-content: space-around;
+		padding: 0 3rem;
+		@include bp(md) {
+			justify-content: unset;
+			padding: 0;
+		}
 		a {
 			color: white;
 			font-size: 1.2em;
-			margin-right: 3em;
+			margin-right: 0;
+			@include bp(md) {
+				margin-right: 1.5em;
+			}
 			@include bp(lg) {
 				margin-right: 4em;
 			}

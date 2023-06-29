@@ -52,27 +52,11 @@
 	.wp-block-buttons {
 		div {
 			display: inline-block;
-			margin-right: 10px;
 			a {
-				display: inline-block;
-				font-size: 1.2em;
-				padding: 0.5em 1em;
-				text-decoration: none;
-				border-radius: 8px;
-				border: 1px solid colors.$color-hero-secondary;
-				color: colors.$color-hero-secondary;
-				transition: 0.3s;
-				&:hover {
-					color: #111;
-					background-color: colors.$color-hero-secondary;
-				}
+				@extend %button;
 			}
-
 			&.disabled {
-				a {
-					pointer-events: none;
-					filter: saturate(0) brightness(1.8);
-				}
+				@extend %button-disabled;
 			}
 		}
 	}

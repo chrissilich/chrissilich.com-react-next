@@ -113,7 +113,7 @@ aside {
 
 // Special variation on headers
 h2.fat {
-	margin: 8rem auto 5rem;
+	margin: 4vw auto 3vw;
 	text-align: center;
 	font-family: 'Tusker Grotesk 9';
 	font-weight: 600;
@@ -125,7 +125,10 @@ h2.fat {
 
 h1.shadow,
 h2.shadow {
-	margin: 2rem auto 2rem -1.5rem;
 	color: colors.$color-hero;
 	text-shadow: 8px 8px 0 colors.$color-hero-secondary;
+	margin: 2rem auto 2rem 0;
+	@include bp(md) {
+		margin: 2rem auto 2rem -1.5rem;
+	}
 }

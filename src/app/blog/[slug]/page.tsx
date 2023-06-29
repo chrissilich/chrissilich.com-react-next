@@ -22,8 +22,8 @@ export default async function BlogSinglePage({ params }: { params: { slug: strin
 					{!post && <Blog404 />}
 					<BlogSidebar posts={posts} />
 				</div>
-
-				<Link href="/blog">Back to Blog Archive</Link>
+				<hr />
+				<Link href="/blog">← Back to Blog Archive</Link>
 			</section>
 
 			<Background />

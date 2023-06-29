@@ -1,11 +1,13 @@
 section.blog-single {
 	@extend .container;
 
-	article {
-		width: 75%;
-	}
-	aside {
-		margin-top: 12rem;
-		width: 25%;
+	@include bp(md) {
+		article {
+			width: 75%;
+		}
+		aside {
+			margin-top: 14rem;
+			width: 25%;
+		}
 	}
 }
