@@ -1,0 +1,7 @@
+@use '../variables/colors' as colors;
+
+body {
+	overflow-x: hidden;
+	width: 100vw;
+	background: colors.$color-site-background;
+}

@@ -7,18 +7,15 @@ export default async function BlogRecent() {
 	const recentPosts = posts.slice(0, 3)
 
 	return (
-		<section id="home-blog-recent" className="container py-5">
+		<section className="home-blog-recent">
 			<h2 className="fat">Recent Blog Posts</h2>
-			<div className="row py-3">
-				<div className="col-12 col-md-10 offset-md-1 ">
-					{recentPosts.map((post) => (
-						<p key={post.id}>
-							<Link href={`/blog/${post.slug}`}>{post.title.rendered}</Link> &mdash;{' '}
-							<em>Posted on {new Date(post.date).toLocaleDateString()}</em>
-						</p>
-					))}
-				</div>
-			</div>
+
+			{recentPosts.map((post) => (
+				<p key={post.id}>
+					<Link href={`/blog/${post.slug}`}>{post.title.rendered}</Link> &mdash;{' '}
+					<em>Posted {new Date(post.date).toLocaleDateString()}</em>
+				</p>
+			))}
 		</section>
 	)
 }

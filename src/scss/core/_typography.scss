@@ -2,32 +2,71 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
+	font-weight: 400;
+	line-height: 150%;
+	color: #e9ecef;
 	line-height: 150%;
 }
 h1,
 .h1 {
+	color: white;
 	font-family: 'Tusker Grotesk 7', sans-serif;
 	font-weight: 600;
-	font-size: 3em;
+	font-size: 3rem;
 }
 h2,
 .h2 {
+	color: white;
 	font-family: 'Tusker Grotesk 6', sans-serif;
 	font-weight: 600;
-	font-size: 2.5em;
+	font-size: 2.5rem;
 }
 h3,
 .h3 {
+	color: white;
 	font-family: 'Tusker Grotesk 4', sans-serif;
 	font-weight: 500;
-	font-size: 2em;
+	font-size: 2rem;
 }
 h4,
 .h4 {
+	color: white;
 	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 	font-weight: 500;
+	font-size: 1.7rem;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	line-height: 110%;
+	margin-top: 0.4rem;
+	margin-bottom: 0.4rem;
+}
+
+p {
+	line-height: 150%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+a {
+	color: colors.$color-hero;
+	text-decoration: none;
+	transition: color 0.1s linear;
+	&:hover {
+		color: colors.$color-hero-secondary;
+	}
 }
 
 p {
@@ -74,7 +113,7 @@ aside {
 
 // Special variation on headers
 h2.fat {
-	margin: 10vw auto 5vw;
+	margin: 4vw auto 3vw;
 	text-align: center;
 	font-family: 'Tusker Grotesk 9';
 	font-weight: 600;
@@ -82,4 +121,14 @@ h2.fat {
 	text-shadow: 8px 8px 0 colors.$color-hero-secondary;
 	font-size: 4.5vw;
 	font-size: max(4.5vw, 30px);
+}
+
+h1.shadow,
+h2.shadow {
+	color: colors.$color-hero;
+	text-shadow: 8px 8px 0 colors.$color-hero-secondary;
+	margin: 2rem auto 2rem 0;
+	@include bp(md) {
+		margin: 2rem auto 2rem -1.5rem;
+	}
 }

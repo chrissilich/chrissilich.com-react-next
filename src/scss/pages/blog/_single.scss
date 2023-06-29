@@ -1,0 +1,13 @@
+section.blog-single {
+	@extend .container;
+
+	@include bp(md) {
+		article {
+			width: 75%;
+		}
+		aside {
+			margin-top: 14rem;
+			width: 25%;
+		}
+	}
+}

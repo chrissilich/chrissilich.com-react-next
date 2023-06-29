@@ -1,7 +1,7 @@
 import { Project } from '@/interfaces/project'
 import Image from 'next/image'
 
-export default async function HomePortfolioListItem({ project }: { project: Project }) {
+export default async function HomeProjectListItem({ project }: { project: Project }) {
 	return (
 		<div
 			id={project.slug}
@@ -9,9 +9,7 @@ export default async function HomePortfolioListItem({ project }: { project: Proj
 				project.acf.project_pad
 			}`}
 		>
-			<div
-				className={`details d-flex flex-column justify-content-center details--size-${project.acf.description_columns}`}
-			>
+			<div className={`details details--size-${project.acf.description_columns}`}>
 				<h3>{project.title.rendered}</h3>
 				<h4>{project.acf.medium}</h4>
 				<p>{project.acf.description_on_home}</p>
@@ -19,9 +17,7 @@ export default async function HomePortfolioListItem({ project }: { project: Proj
 					See Project <span>&rarr;</span>
 				</a>
 			</div>
-			<div
-				className={`image-holder col col-12 col-md-6 offset-0 offset-md-0 image-holder--size-${project.acf.image_columns}`}
-			>
+			<div className={`image-holder image-holder--size-${project.acf.image_columns}`}>
 				<div className="image">
 					{project.main_image_media && (
 						<>
