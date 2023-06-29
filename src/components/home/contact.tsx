@@ -14,7 +14,7 @@ export default function HomeContact() {
 							</Link>
 						</p>
 					</div>
-					<div className="column">
+					<div>
 						<h3>Email</h3>
 						<p>
 							<Link target="_blank" href="mailto:chris.silich@gmail.com">
@@ -22,7 +22,7 @@ export default function HomeContact() {
 							</Link>
 						</p>
 					</div>
-					<div className="column">
+					<div>
 						<h3>Phone</h3>
 						<p>
 							<Link target="_blank" href="tel:6788511069">
