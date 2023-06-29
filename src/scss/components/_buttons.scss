@@ -7,12 +7,12 @@
 	margin: 0.15em;
 	text-decoration: none;
 	border-radius: 8px;
-	border: 1px solid colors.$color-hero-secondary;
-	color: colors.$color-hero-secondary;
+	border: 1px solid var(--color-secondary);
+	color: var(--color-secondary);
 	transition: 0.3s;
 	&:hover {
 		color: #111;
-		background-color: colors.$color-hero-secondary;
+		background-color: var(--color-secondary);
 	}
 }
 %button-disabled {

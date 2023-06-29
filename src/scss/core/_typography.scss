@@ -2,35 +2,31 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 150%;
-	color: #e9ecef;
 	line-height: 150%;
+	color: var(--color-site-text);
 }
 h1,
 .h1 {
-	color: white;
 	font-family: 'Tusker Grotesk 7', sans-serif;
 	font-weight: 600;
 	font-size: 3rem;
 }
 h2,
 .h2 {
-	color: white;
 	font-family: 'Tusker Grotesk 6', sans-serif;
 	font-weight: 600;
 	font-size: 2.5rem;
 }
 h3,
 .h3 {
-	color: white;
 	font-family: 'Tusker Grotesk 4', sans-serif;
 	font-weight: 500;
 	font-size: 2rem;
 }
 h4,
 .h4 {
-	color: white;
 	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 	font-weight: 500;
@@ -61,11 +57,11 @@ p {
 }
 
 a {
-	color: colors.$color-hero;
+	color: var(--color-hero);
 	text-decoration: none;
 	transition: color 0.1s linear;
 	&:hover {
-		color: colors.$color-hero-secondary;
+		color: var(--color-secondary-small);
 	}
 }
 
@@ -80,7 +76,7 @@ p {
 }
 
 aside {
-	color: colors.$color-hero-tint;
+	color: --color-hero-tint;
 	// color: white;
 	h1,
 	.h1 {
@@ -117,17 +113,26 @@ h2.fat {
 	text-align: center;
 	font-family: 'Tusker Grotesk 9';
 	font-weight: 600;
-	color: colors.$color-hero;
-	text-shadow: 8px 8px 0 colors.$color-hero-secondary;
+	color: var(--color-hero);
 	font-size: 4.5vw;
 	font-size: max(4.5vw, 30px);
+	text-shadow: 8px 8px 0 var(--color-secondary);
+	@include increase-contrast {
+		color: var(--color-secondary);
+		text-shadow: none !important;
+	}
 }
 
 h1.shadow,
 h2.shadow {
-	color: colors.$color-hero;
-	text-shadow: 8px 8px 0 colors.$color-hero-secondary;
+	color: var(--color-hero);
 	margin: 2rem auto 2rem 0;
+	text-shadow: 8px 8px 0 var(--color-secondary);
+
+	@include increase-contrast {
+		color: var(--color-secondary);
+		text-shadow: none !important;
+	}
 	@include bp(md) {
 		margin: 2rem auto 2rem -1.5rem;
 	}

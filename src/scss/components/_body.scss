@@ -3,5 +3,9 @@
 body {
 	overflow-x: hidden;
 	width: 100vw;
-	background: colors.$color-site-background;
+
+	background: var(--color-site-background);
+	@include increase-contrast {
+		background: black;
+	}
 }

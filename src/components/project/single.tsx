@@ -3,7 +3,7 @@ import { Project } from '@/interfaces/project'
 export default function ProjectSingle({ project }: { project: Project }) {
 	return (
 		<>
-			<section className="project-single container">
+			<section id="main-content" className="project-single container">
 				<h1>
 					{project.acf.alternate_title_an_page ? project.acf.alternate_title_an_page : project.title.rendered}
 				</h1>

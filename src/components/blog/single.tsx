@@ -2,7 +2,7 @@ import { BlogPost } from '@/interfaces/blog'
 
 export default function BlogSingle({ post }: { post: BlogPost }) {
 	return (
-		<article>
+		<article id="main-content">
 			<h1>{post.title.rendered}</h1>
 			<hr />
 			<div className="gutenberg-content">

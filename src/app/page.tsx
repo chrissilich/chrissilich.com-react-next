@@ -7,7 +7,10 @@ import Contact from '@/components/home/contact'
 import Footer from '@/components/footer'
 import Background from '@/components/background'
 
-import { getPostArchive } from '@/services/blog'
+export const metadata = {
+	title: 'Home - Chris Silich',
+	description: 'Creative Technologist Portfolio',
+}
 
 export default function Home() {
 	return (

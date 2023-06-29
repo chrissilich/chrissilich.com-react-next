@@ -1,0 +1,10 @@
+.skip-to-content-link {
+	left: 50%;
+	top: 100px;
+	position: absolute;
+	transform: translateX(-50%) translateY(-100vh);
+
+	&:focus {
+		transform: translateX(-50%) translateY(0);
+	}
+}

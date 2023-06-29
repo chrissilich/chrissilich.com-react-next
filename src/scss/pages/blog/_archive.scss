@@ -8,7 +8,7 @@ section.blog-archive {
 		li {
 			position: relative;
 			padding: 1.5em 0;
-			border-bottom: 1px dashed colors.$color-hero-secondary;
+			border-bottom: 1px dashed var(--color-secondary);
 			&:last-child {
 				border-bottom: none;
 			}

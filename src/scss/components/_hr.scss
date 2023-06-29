@@ -3,6 +3,6 @@
 hr {
 	outline: none;
 	border: 0;
-	border-top: 1px dashed colors.$color-hero;
+	border-top: 1px dashed var(--color-hero);
 	margin: 2rem 0;
 }

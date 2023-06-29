@@ -7,3 +7,15 @@
 		}
 	}
 }
+
+@mixin increase-contrast() {
+	@media (prefers-contrast: more) {
+		@content;
+	}
+}
+
+@mixin reduce-motion() {
+	@media (prefers-reduced-motion: reduce) {
+		@content;
+	}
+}

@@ -1,5 +1,4 @@
 @use 'sass:math';
-@use '../../variables/colors';
 
 section.home-project-list {
 	@extend .container-full-width;
@@ -42,14 +41,19 @@ section.home-project-list {
 				.image {
 					top: -4px;
 					left: -4px;
-					box-shadow: 12px 12px 0px colors.$color-hero-secondary;
+					box-shadow: 12px 12px 0px var(--color-secondary);
 					img {
 						filter: grayscale(0);
+					}
+					@include reduce-motion {
+						top: 0px;
+						left: 0px;
+						box-shadow: 8px 8px 0px var(--color-hero);
 					}
 				}
 			}
 			.details .see-project {
-				color: colors.$color-hero;
+				color: var(--color-hero);
 				span {
 					left: 8px;
 				}
@@ -79,7 +83,7 @@ section.home-project-list {
 				}
 			}
 			.image {
-				box-shadow: 8px 8px 0px colors.$color-hero-secondary;
+				box-shadow: 8px 8px 0px var(--color-secondary);
 				position: relative;
 				top: 0;
 				left: 0;
@@ -112,7 +116,7 @@ section.home-project-list {
 				}
 			}
 			h3 {
-				color: colors.$color-hero;
+				color: var(--color-hero);
 				font-size: 4.5vw;
 				font-size: max(4.5vw, 30px);
 			}
@@ -123,13 +127,13 @@ section.home-project-list {
 			}
 			p {
 				font-size: 1.25vw;
-				font-size: max(1.25vw, 18px);
-				color: white;
+				font-size: clamp(16px, 1.25vw, 20px);
 			}
 			.see-project {
 				cursor: pointer;
-				color: colors.$color-hero-secondary;
+				color: var(--color-secondary-small);
 				transition: color 0.3s;
+				font-size: 1.1rem;
 				span {
 					position: relative;
 					left: 0px;
