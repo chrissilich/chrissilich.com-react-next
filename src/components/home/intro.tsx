@@ -14,6 +14,15 @@ export default function HomeIntro() {
 
 	useLayoutEffect(() => {
 		if (typeof window === 'undefined') return
+
+		if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+			// skip all the animations
+			gsap.set([nameElementRef.current, jobTitleElementRef.current, imageParentElementRef.current], {
+				opacity: 1,
+			})
+			return
+		}
+
 		gsap.registerPlugin(SplitText)
 
 		let splitH1 = new SplitText(nameElementRef.current, {

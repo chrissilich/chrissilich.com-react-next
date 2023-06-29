@@ -46,6 +46,11 @@ section.home-project-list {
 					img {
 						filter: grayscale(0);
 					}
+					@include reduce-motion {
+						top: 0px;
+						left: 0px;
+						box-shadow: 8px 8px 0px colors.$color-hero;
+					}
 				}
 			}
 			.details .see-project {

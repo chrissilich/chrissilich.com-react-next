@@ -1,12 +1,21 @@
 div.background-grid-effect {
 	position: fixed;
-	width: 150vw;
-	height: 150vh;
-	left: -25vw;
-	top: -25vh;
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+	top: 0;
 	background-image: url('/images/tile-256-white-10-2px.png');
-	background-size: 128px;
 	background-attachment: fixed;
 	background-position: 50% 50%;
 	z-index: -10000;
+	background-size: 64px;
+	@include bp(md) {
+		background-size: 128px;
+	}
+	@include increase-contrast {
+		background-image: none;
+	}
+	@include reduce-motion {
+		background-position: 50% 50% !important;
+	}
 }
