@@ -32,6 +32,7 @@
 
 	@include bp(md) {
 		flex-direction: row;
+		flex-wrap: nowrap;
 	}
 
 	.column {
