@@ -34,6 +34,9 @@
 		flex-direction: row;
 		flex-wrap: nowrap;
 	}
+	&.wrap {
+		flex-wrap: wrap;
+	}
 
 	.column {
 		width: 100%;
