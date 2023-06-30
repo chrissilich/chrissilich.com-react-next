@@ -9,7 +9,7 @@ export default function HomeContact() {
 					<div>
 						<h3>Résumé</h3>
 						<p>
-							<Link target="_blank" href="./pdf/resume-chris-silich-front-end-dev.pdf">
+							<Link target="_blank" href="./pdf/resume-chris-silich.pdf">
 								Download/view PDF
 							</Link>
 						</p>
